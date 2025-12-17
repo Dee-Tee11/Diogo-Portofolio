@@ -1,0 +1,58 @@
+:root {
+  --font-display: 'Orbitron', sans-serif;
+  --font-body: 'Rajdhani', sans-serif;
+  --font-jp: 'Noto Sans JP', sans-serif;
+
+  --color-bg: #050005;
+  /* Dark Purple/Black */
+  --color-text: #d100d1;
+  /* Cyber Purple */
+
+  /* Neo Tokyo Terminal Palette */
+  --color-primary: #d100d1;
+  /* Bright Neon Purple */
+  --color-secondary: #ea00ea;
+  /* Lighter Purple */
+  --color-accent: #d100d1;
+
+  --grid-color: rgba(209, 0, 209, 0.2);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-body);
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  overflow: hidden;
+  /* Prevent scroll */
+  height: 100vh;
+}
+
+/* Scanline effect */
+body::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: repeating-linear-gradient(0deg,
+      rgba(0, 0, 0, 0.15),
+      rgba(0, 0, 0, 0.15) 1px,
+      transparent 1px,
+      transparent 2px);
+  pointer-events: none;
+  z-index: 100;
+}
+
+button {
+  all: unset;
+  cursor: pointer;
+}
