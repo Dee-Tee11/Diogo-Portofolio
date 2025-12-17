@@ -94,7 +94,8 @@ const Hero = () => {
                     "Fast Learning",
                     "Effective Communication",
                     "Adaptability & Flexibility",
-                    "Time Management"
+                    "Time Management",
+                    "Responsible"
                 ],
                 languages: "Languages",
                 languageList: [
@@ -166,7 +167,8 @@ const Hero = () => {
                     "Aprendizagem Rápida",
                     "Comunicação Eficaz",
                     "Adaptabilidade e Flexibilidade",
-                    "Gestão de Tempo"
+                    "Gestão de Tempo",
+                    "Responsável"
                 ],
                 languages: "Idiomas",
                 languageList: [
