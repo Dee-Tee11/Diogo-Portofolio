@@ -3,8 +3,8 @@ import { useFrame } from '@react-three/fiber';
 import { useGLTF, useAnimations } from '@react-three/drei';
 import * as THREE from 'three';
 
-// Import GLTF
-import modelPath from '../3d/dream_computer_setup/scene.gltf';
+// Path to GLTF in public folder
+const modelPath = "/assets/3d/dream_computer_setup/scene.gltf";
 
 export default function ComputerModel({ scrollContainerRef }) {
     const group = useRef();
