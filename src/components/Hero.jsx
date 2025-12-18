@@ -410,7 +410,7 @@ const Hero = () => {
                                 <li style={{ marginBottom: '10px' }}>{t.experience.soluis.desc3}</li>
                                 <li style={{ marginBottom: '10px' }}>{t.experience.soluis.desc4}</li>
                                 <li style={{ marginBottom: '10px', color: 'var(--color-primary)', fontSize: '0.9rem' }}>
-                                    Stack: React, TypeScript, Python, Three.js, MySQL, Azure DevOps
+                                    Stack: React, TypeScript, Python, Three.js, MySQL, Azure DevOps, C#
                                 </li>
                             </ul>
                         </div>
