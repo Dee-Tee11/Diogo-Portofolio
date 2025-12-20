@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import { useProgress } from '@react-three/drei';
+import { Analytics } from '@vercel/analytics/react';
 import Hero from './components/Hero';
 import LoadingScreen from './components/LoadingScreen';
 import './App.css';
@@ -22,6 +23,7 @@ function App() {
     <div style={{ background: 'var(--color-bg)' }}>
       <LoadingScreen started={started} />
       <Hero />
+      <Analytics />
     </div>
   )
 }
