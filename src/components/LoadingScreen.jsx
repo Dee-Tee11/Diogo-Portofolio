@@ -46,9 +46,13 @@ const LoadingScreen = ({ started, onStarted }) => {
                             ease: "linear"
                         }}
                         style={{
-                            fontSize: 'clamp(1.5rem, 4vw, 2.5rem)',
+                            fontSize: 'clamp(1.2rem, 4vw, 2.5rem)',
                             marginBottom: '40px',
-                            letterSpacing: '0.2em'
+                            letterSpacing: '0.15em',
+                            textAlign: 'center',
+                            width: '100%',
+                            padding: '0 20px',
+                            boxSizing: 'border-box'
                         }}
                     >
                         INITIALIZING...
