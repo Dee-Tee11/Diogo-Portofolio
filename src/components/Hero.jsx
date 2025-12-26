@@ -82,6 +82,15 @@ const Hero = () => {
                     ],
                     stack: "REACT • TYPESCRIPT • PYTHON • RAG • GEN AI • ML",
                     cta: "VIEW PROJECT ►"
+                },
+                portfolio: {
+                    desc: "This interactive 3D portfolio. An immersive experience built with React Three Fiber to showcase skills and projects.",
+                    highlights: [
+                        "► Implemented a responsive 3D scene with interactive elements.",
+                        "► Optimized performance and animations for smooth user experience."
+                    ],
+                    stack: "REACT • THREE.JS • FRAMER MOTION • VITE",
+                    cta: "VIEW REPO ►"
                 }
             },
             skills: {
@@ -155,6 +164,15 @@ const Hero = () => {
                     ],
                     stack: "REACT • TYPESCRIPT • PYTHON • RAG • GEN AI • ML",
                     cta: "VER PROJETO ►"
+                },
+                portfolio: {
+                    desc: "Este portfólio 3D interativo. Uma experiência imersiva construída com React Three Fiber para demonstrar competências e projetos.",
+                    highlights: [
+                        "► Implementação de uma cena 3D responsiva com elementos interativos.",
+                        "► Otimização de performance e animações para uma experiência fluida."
+                    ],
+                    stack: "REACT • THREE.JS • FRAMER MOTION • VITE",
+                    cta: "VER REPO ►"
                 }
             },
             skills: {
@@ -383,10 +401,22 @@ const Hero = () => {
 
                     {/* PROFILE */}
                     <section>
-                        <h2 style={{ fontFamily: '"Press Start 2P", cursive', color: 'var(--color-primary)', fontSize: '1.5rem', marginBottom: '30px', borderBottom: '2px solid var(--color-primary)', paddingBottom: '10px' }}>
+                        <h2 style={{ fontFamily: '"Press Start 2P", cursive', color: 'var(--color-primary)', fontSize: '1.5rem', marginBottom: '30px', borderBottom: '2px solid var(--color-primary)', paddingBottom: '10px', textShadow: '2px 2px 4px #000' }}>
                             <DecryptText text={t.sections.profile} speed={20} />
                         </h2>
-                        <p style={{ color: '#e0e0e0', fontFamily: '"Rajdhani", sans-serif', fontSize: '1.2rem', lineHeight: '1.6', background: 'rgba(209, 0, 209, 0.1)', padding: '20px', borderLeft: '4px solid var(--color-primary)' }}>
+                        <p style={{
+                            color: '#e0e0e0',
+                            fontFamily: '"Rajdhani", sans-serif',
+                            fontSize: '1.2rem',
+                            lineHeight: '1.6',
+                            background: 'rgba(0, 0, 0, 0.3)',
+                            backdropFilter: 'blur(3px)',
+                            padding: '25px',
+                            borderRadius: '15px',
+                            border: '1px solid rgba(209, 0, 209, 0.3)',
+                            boxShadow: '0 0 15px rgba(0, 0, 0, 0.3)',
+                            textShadow: '1px 1px 3px #000'
+                        }}>
                             {t.profileText}
                         </p>
                     </section>
@@ -398,31 +428,47 @@ const Hero = () => {
                         </h2>
 
                         {/* Soluis (Updated) */}
-                        <div style={{ marginBottom: '40px' }}>
+                        <div style={{
+                            marginBottom: '40px',
+                            background: 'rgba(0, 0, 0, 0.3)',
+                            backdropFilter: 'blur(3px)',
+                            padding: '25px',
+                            borderRadius: '15px',
+                            border: '1px solid rgba(209, 0, 209, 0.3)',
+                            boxShadow: '0 0 15px rgba(0, 0, 0, 0.3)'
+                        }}>
                             <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'baseline', marginBottom: '10px', flexWrap: 'wrap' }}>
-                                <h3 style={{ fontFamily: '"Orbitron", sans-serif', fontSize: '1.4rem', color: '#fff' }}>Soluis</h3>
-                                <span style={{ fontFamily: '"Press Start 2P", monospace', fontSize: '0.7rem', color: 'var(--color-primary)' }}>JAN 2025 - PRESENT</span>
+                                <h3 style={{ fontFamily: '"Orbitron", sans-serif', fontSize: '1.4rem', color: '#fff', textShadow: '2px 2px 4px #000, 0 0 10px rgba(0,0,0,0.8)' }}>Soluis</h3>
+                                <span style={{ fontFamily: '"Press Start 2P", monospace', fontSize: '0.7rem', color: 'var(--color-primary)', textShadow: '2px 2px 2px #000' }}>JAN 2025 - PRESENT</span>
                             </div>
-                            <h4 style={{ color: '#ae00ae', marginBottom: '15px' }}>{t.experience.soluis.role}</h4>
-                            <ul style={{ listStyle: 'none', paddingLeft: '0', color: '#ccc', fontFamily: '"Rajdhani", sans-serif', fontSize: '1.1rem' }}>
+                            <h4 style={{ color: '#fff', marginBottom: '15px', textShadow: '2px 2px 4px #000', fontWeight: 'bold' }}>{t.experience.soluis.role}</h4>
+                            <ul style={{ listStyle: 'none', paddingLeft: '0', color: '#e0e0e0', fontFamily: '"Rajdhani", sans-serif', fontSize: '1.1rem', textShadow: '1px 1px 3px #000' }}>
                                 <li style={{ marginBottom: '10px' }}>{t.experience.soluis.desc1}</li>
                                 <li style={{ marginBottom: '10px' }}>{t.experience.soluis.desc2}</li>
                                 <li style={{ marginBottom: '10px' }}>{t.experience.soluis.desc3}</li>
                                 <li style={{ marginBottom: '10px' }}>{t.experience.soluis.desc4}</li>
-                                <li style={{ marginBottom: '10px', color: 'var(--color-primary)', fontSize: '0.9rem' }}>
+                                <li style={{ marginBottom: '10px', color: 'var(--color-primary)', fontSize: '0.9rem', textShadow: '1px 1px 2px #000', fontWeight: 'bold' }}>
                                     Stack: React, TypeScript, Python, Three.js, MySQL, Azure DevOps, C#
                                 </li>
                             </ul>
                         </div>
 
                         {/* Curricular Internship */}
-                        <div style={{ marginBottom: '40px' }}>
+                        <div style={{
+                            marginBottom: '40px',
+                            background: 'rgba(0, 0, 0, 0.3)',
+                            backdropFilter: 'blur(3px)',
+                            padding: '25px',
+                            borderRadius: '15px',
+                            border: '1px solid rgba(209, 0, 209, 0.3)',
+                            boxShadow: '0 0 15px rgba(0, 0, 0, 0.3)'
+                        }}>
                             <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'baseline', marginBottom: '10px', flexWrap: 'wrap' }}>
-                                <h3 style={{ fontFamily: '"Orbitron", sans-serif', fontSize: '1.4rem', color: '#fff' }}>{t.experience.internship.title}</h3>
-                                <span style={{ fontFamily: '"Press Start 2P", monospace', fontSize: '0.7rem', color: 'var(--color-primary)' }}>SEP 2024 - DEC 2024</span>
+                                <h3 style={{ fontFamily: '"Orbitron", sans-serif', fontSize: '1.4rem', color: '#fff', textShadow: '2px 2px 4px #000, 0 0 10px rgba(0,0,0,0.8)' }}>{t.experience.internship.title}</h3>
+                                <span style={{ fontFamily: '"Press Start 2P", monospace', fontSize: '0.7rem', color: 'var(--color-primary)', textShadow: '2px 2px 2px #000' }}>SEP 2024 - DEC 2024</span>
                             </div>
-                            <h4 style={{ color: '#ae00ae', marginBottom: '15px' }}>{t.experience.internship.role}</h4>
-                            <ul style={{ listStyle: 'none', paddingLeft: '0', color: '#ccc', fontFamily: '"Rajdhani", sans-serif', fontSize: '1.1rem' }}>
+                            <h4 style={{ color: '#fff', marginBottom: '15px', textShadow: '2px 2px 4px #000', fontWeight: 'bold' }}>{t.experience.internship.role}</h4>
+                            <ul style={{ listStyle: 'none', paddingLeft: '0', color: '#e0e0e0', fontFamily: '"Rajdhani", sans-serif', fontSize: '1.1rem', textShadow: '1px 1px 3px #000' }}>
                                 <li style={{ marginBottom: '10px' }}>{t.experience.internship.desc1}</li>
                                 <li style={{ marginBottom: '10px' }}>{t.experience.internship.desc2}</li>
                                 <li style={{ marginBottom: '10px' }}>{t.experience.internship.desc3}</li>
@@ -430,12 +476,20 @@ const Hero = () => {
                         </div>
 
                         {/* International Project Holland */}
-                        <div style={{ marginBottom: '40px' }}>
+                        <div style={{
+                            marginBottom: '40px',
+                            background: 'rgba(0, 0, 0, 0.3)',
+                            backdropFilter: 'blur(3px)',
+                            padding: '25px',
+                            borderRadius: '15px',
+                            border: '1px solid rgba(209, 0, 209, 0.3)',
+                            boxShadow: '0 0 15px rgba(0, 0, 0, 0.3)'
+                        }}>
                             <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'baseline', marginBottom: '10px', flexWrap: 'wrap' }}>
-                                <h3 style={{ fontFamily: '"Orbitron", sans-serif', fontSize: '1.4rem', color: '#fff' }}>{t.experience.holland.title}</h3>
-                                <span style={{ fontFamily: '"Press Start 2P", monospace', fontSize: '0.7rem', color: 'var(--color-primary)' }}>APR 2024</span>
+                                <h3 style={{ fontFamily: '"Orbitron", sans-serif', fontSize: '1.4rem', color: '#fff', textShadow: '2px 2px 4px #000, 0 0 10px rgba(0,0,0,0.8)' }}>{t.experience.holland.title}</h3>
+                                <span style={{ fontFamily: '"Press Start 2P", monospace', fontSize: '0.7rem', color: 'var(--color-primary)', textShadow: '2px 2px 2px #000' }}>APR 2024</span>
                             </div>
-                            <ul style={{ listStyle: 'none', paddingLeft: '0', color: '#ccc', fontFamily: '"Rajdhani", sans-serif', fontSize: '1.1rem' }}>
+                            <ul style={{ listStyle: 'none', paddingLeft: '0', color: '#e0e0e0', fontFamily: '"Rajdhani", sans-serif', fontSize: '1.1rem', textShadow: '1px 1px 3px #000' }}>
                                 <li style={{ marginBottom: '10px' }}>{t.experience.holland.desc1}</li>
                                 <li style={{ marginBottom: '10px' }}>{t.experience.holland.desc2}</li>
                                 <li style={{ marginBottom: '10px' }}>{t.experience.holland.desc3}</li>
@@ -443,13 +497,21 @@ const Hero = () => {
                         </div>
 
                         {/* Summer Internship */}
-                        <div style={{ marginBottom: '40px' }}>
+                        <div style={{
+                            marginBottom: '40px',
+                            background: 'rgba(0, 0, 0, 0.3)',
+                            backdropFilter: 'blur(3px)',
+                            padding: '25px',
+                            borderRadius: '15px',
+                            border: '1px solid rgba(209, 0, 209, 0.3)',
+                            boxShadow: '0 0 15px rgba(0, 0, 0, 0.3)'
+                        }}>
                             <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'baseline', marginBottom: '10px', flexWrap: 'wrap' }}>
-                                <h3 style={{ fontFamily: '"Orbitron", sans-serif', fontSize: '1.4rem', color: '#fff' }}>{t.experience.summer.title}</h3>
-                                <span style={{ fontFamily: '"Press Start 2P", monospace', fontSize: '0.7rem', color: 'var(--color-primary)' }}>JUL 2022 - AUG 2022</span>
+                                <h3 style={{ fontFamily: '"Orbitron", sans-serif', fontSize: '1.4rem', color: '#fff', textShadow: '2px 2px 4px #000, 0 0 10px rgba(0,0,0,0.8)' }}>{t.experience.summer.title}</h3>
+                                <span style={{ fontFamily: '"Press Start 2P", monospace', fontSize: '0.7rem', color: 'var(--color-primary)', textShadow: '2px 2px 2px #000' }}>JUL 2022 - AUG 2022</span>
                             </div>
-                            <h4 style={{ color: '#ae00ae', marginBottom: '15px' }}>{t.experience.summer.role}</h4>
-                            <ul style={{ listStyle: 'none', paddingLeft: '0', color: '#ccc', fontFamily: '"Rajdhani", sans-serif', fontSize: '1.1rem' }}>
+                            <h4 style={{ color: '#fff', marginBottom: '15px', textShadow: '2px 2px 4px #000', fontWeight: 'bold' }}>{t.experience.summer.role}</h4>
+                            <ul style={{ listStyle: 'none', paddingLeft: '0', color: '#e0e0e0', fontFamily: '"Rajdhani", sans-serif', fontSize: '1.1rem', textShadow: '1px 1px 3px #000' }}>
                                 <li style={{ marginBottom: '10px' }}>{t.experience.summer.desc1}</li>
                                 <li style={{ marginBottom: '10px' }}>{t.experience.summer.desc2}</li>
                             </ul>
@@ -464,8 +526,8 @@ const Hero = () => {
                         <a href="https://movienightai.vercel.app/" target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none' }}>
                             <motion.div
                                 style={{
-                                    background: 'rgba(5, 5, 10, 0.9)', // Darker background for contrast
-                                    backdropFilter: 'blur(10px)',       // Blur effect to hide model behind
+                                    background: 'rgba(5, 5, 10, 0.6)', // More transparent to see model
+                                    backdropFilter: 'blur(5px)',
                                     border: '1px solid var(--color-primary)',
                                     padding: '25px',
                                     cursor: 'pointer',
@@ -477,40 +539,105 @@ const Hero = () => {
                                         '0 0 5px rgba(209, 0, 209, 0.2)',
                                         '0 0 20px rgba(209, 0, 209, 0.6)',
                                         '0 0 5px rgba(209, 0, 209, 0.2)'
-                                    ]
-                                }}
-                                transition={{
-                                    duration: 2,
-                                    repeat: Infinity,
-                                    ease: "easeInOut"
+                                    ],
+                                    transition: {
+                                        duration: 2,
+                                        repeat: Infinity,
+                                        ease: "easeInOut"
+                                    }
                                 }}
                                 whileHover={{
                                     scale: 1.05,
                                     boxShadow: '0 0 40px rgba(209, 0, 209, 0.8)',
-                                    borderColor: '#fff'
+                                    borderColor: '#fff',
+                                    transition: {
+                                        duration: 0.3,
+                                        ease: "easeOut",
+                                        repeat: 0
+                                    }
                                 }}
                             >
                                 <div style={{ position: 'absolute', top: 0, left: 0, width: '4px', height: '100%', background: 'var(--color-primary)' }} />
-                                <h3 style={{ fontFamily: '"Press Start 2P", cursive', fontSize: '1.2rem', color: '#fff', marginBottom: '15px' }}>
+                                <h3 style={{ fontFamily: '"Press Start 2P", cursive', fontSize: '1.2rem', color: '#fff', marginBottom: '15px', textShadow: '3px 3px 0px #000, 0 0 10px rgba(0,0,0,0.8)' }}>
                                     MOVIE NIGHT AI
                                 </h3>
-                                <p style={{ color: '#ccc', fontFamily: '"Rajdhani", sans-serif', fontSize: '1.1rem', marginBottom: '15px' }}>
+                                <p style={{ color: '#e0e0e0', fontFamily: '"Rajdhani", sans-serif', fontSize: '1.1rem', marginBottom: '15px', textShadow: '1px 1px 2px #000' }}>
                                     {t.projects.movieNight.desc}
                                 </p>
                                 {t.projects.movieNight.highlights && (
                                     <ul style={{ listStyle: 'none', padding: 0, marginBottom: '15px' }}>
                                         {t.projects.movieNight.highlights.map((highlight, index) => (
-                                            <li key={index} style={{ color: '#ccc', fontFamily: '"Rajdhani", sans-serif', fontSize: '1rem', marginBottom: '5px' }}>
+                                            <li key={index} style={{ color: '#e0e0e0', fontFamily: '"Rajdhani", sans-serif', fontSize: '1rem', marginBottom: '5px', textShadow: '1px 1px 2px #000' }}>
                                                 {highlight}
                                             </li>
                                         ))}
                                     </ul>
                                 )}
-                                <p style={{ color: 'var(--color-primary)', fontFamily: '"Press Start 2P", monospace', fontSize: '0.7rem', lineHeight: '1.6' }}>
+                                <p style={{ color: 'var(--color-primary)', fontFamily: '"Press Start 2P", monospace', fontSize: '0.75rem', lineHeight: '1.6', textShadow: '2px 2px 0px #000', fontWeight: 'bold' }}>
                                     {t.projects.movieNight.stack}
                                 </p>
                                 <div style={{ marginTop: '15px', display: 'flex', justifyContent: 'flex-end' }}>
                                     <span style={{ color: '#fff', fontSize: '0.8rem', fontFamily: '"Orbitron", sans-serif' }}>{t.projects.movieNight.cta}</span>
+                                </div>
+                            </motion.div>
+                        </a>
+
+                        {/* Portfolio Project */}
+                        <a href="https://github.com/Dee-Tee11/Diogo-Portofolio" target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none', marginTop: '40px', display: 'block' }}>
+                            <motion.div
+                                style={{
+                                    background: 'rgba(5, 5, 10, 0.6)',
+                                    backdropFilter: 'blur(5px)',
+                                    border: '1px solid var(--color-primary)',
+                                    padding: '25px',
+                                    cursor: 'pointer',
+                                    position: 'relative',
+                                    overflow: 'hidden'
+                                }}
+                                animate={{
+                                    boxShadow: [
+                                        '0 0 5px rgba(209, 0, 209, 0.2)',
+                                        '0 0 20px rgba(209, 0, 209, 0.6)',
+                                        '0 0 5px rgba(209, 0, 209, 0.2)'
+                                    ],
+                                    transition: {
+                                        duration: 2,
+                                        repeat: Infinity,
+                                        ease: "easeInOut"
+                                    }
+                                }}
+                                whileHover={{
+                                    scale: 1.05,
+                                    boxShadow: '0 0 40px rgba(209, 0, 209, 0.8)',
+                                    borderColor: '#fff',
+                                    transition: {
+                                        duration: 0.3,
+                                        ease: "easeOut",
+                                        repeat: 0
+                                    }
+                                }}
+                            >
+                                <div style={{ position: 'absolute', top: 0, left: 0, width: '4px', height: '100%', background: 'var(--color-primary)' }} />
+                                <h3 style={{ fontFamily: '"Press Start 2P", cursive', fontSize: '1.2rem', color: '#fff', marginBottom: '15px', textShadow: '3px 3px 0px #000, 0 0 10px rgba(0,0,0,0.8)' }}>
+                                    PORTFOLIO 3D
+                                </h3>
+                                <p style={{ color: '#e0e0e0', fontFamily: '"Rajdhani", sans-serif', fontSize: '1.1rem', marginBottom: '15px', textShadow: '1px 1px 2px #000' }}>
+                                    {t.projects.portfolio.desc}
+                                </p>
+                                {t.projects.portfolio.highlights && (
+                                    <ul style={{ listStyle: 'none', padding: 0, marginBottom: '15px' }}>
+                                        {t.projects.portfolio.highlights.map((highlight, index) => (
+                                            <li key={index} style={{ color: '#e0e0e0', fontFamily: '"Rajdhani", sans-serif', fontSize: '1rem', marginBottom: '5px', textShadow: '1px 1px 2px #000' }}>
+                                                {highlight}
+                                            </li>
+                                        ))}
+                                    </ul>
+                                )}
+                                <p style={{ color: 'var(--color-primary)', fontFamily: '"Press Start 2P", monospace', fontSize: '0.75rem', lineHeight: '1.6', textShadow: '2px 2px 0px #000', fontWeight: 'bold' }}>
+                                    {t.projects.portfolio.stack}
+                                </p>
+                                <div style={{ marginTop: '15px', display: 'flex', justifyContent: 'flex-end' }}>
+                                    <span style={{ color: '#fff', fontSize: '0.8rem', fontFamily: '"Orbitron", sans-serif' }}>{t.projects.portfolio.cta}</span>
                                 </div>
                             </motion.div>
                         </a>
