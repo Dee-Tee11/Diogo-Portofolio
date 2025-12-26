@@ -44,7 +44,7 @@ const Hero = () => {
                 projects: "FEATURED PROJECTS",
                 skills: "SKILLS & TECH"
             },
-            profileText: "Computer Engineering graduate specializing in AI and Full Stack development. Passionate about building intelligent automation systems and integrating cutting-edge Generative AI into enterprise solutions. Dedicated to engineering excellence and continuous innovation.",
+            profileText: "Computer Engineer specializing in AI and Full Stack development. Experienced in delivering full-stack automation projects and integrating cutting-edge Generative AI into enterprise solutions. Dedicated to engineering excellence and continuous innovation.",
             experience: {
                 soluis: {
                     role: "AI, Automation & Full Stack Engineer",
@@ -126,14 +126,13 @@ const Hero = () => {
                 projects: "PROJETOS EM DESTAQUE",
                 skills: "COMPETÊNCIAS E TECNOLOGIAS"
             },
-            profileText: "Licenciado em Engenharia Informática, especializado em IA e desenvolvimento Full Stack. Apaixonado por criar sistemas de automação inteligentes e integrar IA Generativa de ponta em soluções empresariais. Dedicado à excelência na engenharia e inovação contínua.",
+            profileText: "Engenheiro Informático especializado em IA e desenvolvimento Full Stack. Experiente na entrega de projetos de automação full-stack e na integração de IA Generativa de vanguarda em soluções empresariais. Dedicado à excelência na engenharia e à inovação contínua.",
             experience: {
                 soluis: {
                     role: "AI, Automation & Full Stack Engineer",
                     desc1: "► Participação em vários projetos de automação Full Stack.",
                     desc2: "► Integração de soluções de Inteligência Artificial em sistemas empresariais.",
                     desc3: "► Trabalhei com soluções serverless escaláveis usando Cloud Storage e Edge Functions.",
-                    desc4: "► Desenhei e geri pipelines de CI/CD para fluxos de trabalho DevOps automatizados."
                 },
                 internship: {
                     title: "Estágio Curricular",
