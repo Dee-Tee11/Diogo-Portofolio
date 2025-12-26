@@ -54,20 +54,20 @@ const Hero = () => {
 
                 },
                 internship: {
-                    title: "Curricular Internship",
+                    title: "Curricular Internship in Samsys",
                     role: "Full Stack Developer",
                     desc1: "► Backend and Frontend development (React TypeScript & .NET).",
                     desc2: "► Created a plugin implemented in the company's main application.",
                     desc3: "► Agile Methodology (Scrum), Azure DevOps, and Git."
                 },
                 holland: {
-                    title: "International Project (Netherlands)",
+                    title: "International Project in Fontys University of Applied Sciences (Netherlands)",
                     desc1: "► Intensive project on \"Transformation from linear to circular economy\".",
                     desc2: "► Applied strategies for sustainability and profit in an electric bike company.",
                     desc3: "► Technologies: Java."
                 },
                 summer: {
-                    title: "Summer Internship",
+                    title: "Summer Internship at VisitPlann",
                     role: "Back-End Developer",
                     desc1: "► Mobile application for monument recognition via location and IA.",
                     desc2: "► Technologies: Android Studio, Java."
@@ -139,13 +139,13 @@ const Hero = () => {
             profileText: "Engenheiro Informático especializado em IA e desenvolvimento Full Stack. Experiente na entrega de projetos de automação full-stack e na integração de IA Generativa de vanguarda em soluções empresariais. Dedicado à excelência na engenharia e à inovação contínua.",
             experience: {
                 soluis: {
-                    role: "AI, Automation & Full Stack Engineer",
+                    role: "Engenheiro de IA, Automação & Full Stack",
                     desc1: "► Participação em vários projetos de automação Full Stack.",
                     desc2: "► Integração de soluções de Inteligência Artificial em sistemas empresariais.",
                     desc3: "► Trabalhei com soluções serverless escaláveis usando Cloud Storage e Edge Functions.",
                 },
                 internship: {
-                    title: "Estágio Curricular",
+                    title: "Estágio Curricular na Samsys",
                     role: "Desenvolvedor Full Stack",
                     desc1: "► Desenvolvimento Backend e Frontend (React TypeScript e .NET).",
                     desc2: "► Criação de um plugin implementado na aplicação principal da empresa.",
@@ -173,7 +173,7 @@ const Hero = () => {
                         "► Experimentação com várias estratégias de RL usando Jupyter Notebooks."
                     ],
                     stack: "PYTHON • REINFORCEMENT LEARNING • JUPYTER • GOOGLE COLAB • KAGGLE",
-                    status: "TRABALHANDO AGORA"
+                    status: "A Desenvolver"
                 },
                 movieNight: {
                     desc: "Aplicação inteligente de recomendação de filmes. Sistema RAG avançado com embeddings vetoriais para sugestões personalizadas.",
@@ -465,7 +465,6 @@ const Hero = () => {
                                 <li style={{ marginBottom: '10px' }}>{t.experience.soluis.desc1}</li>
                                 <li style={{ marginBottom: '10px' }}>{t.experience.soluis.desc2}</li>
                                 <li style={{ marginBottom: '10px' }}>{t.experience.soluis.desc3}</li>
-                                <li style={{ marginBottom: '10px' }}>{t.experience.soluis.desc4}</li>
                                 <li style={{ marginBottom: '10px', color: 'var(--color-primary)', fontSize: '0.9rem', textShadow: '1px 1px 2px #000', fontWeight: 'bold' }}>
                                     Stack: React, TypeScript, Python, Three.js, MySQL, Azure DevOps, C#
                                 </li>
