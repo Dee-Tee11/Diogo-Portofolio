@@ -74,6 +74,16 @@ const Hero = () => {
                 }
             },
             projects: {
+                atlasAI: {
+                    desc: "AI Secretary with advanced conversational capabilities. Fine-tuned language model using Reinforcement Learning for optimal performance.",
+                    highlights: [
+                        "► Applied Reinforcement Learning techniques for model fine-tuning.",
+                        "► Developed and trained on Google Colab and Kaggle platforms.",
+                        "► Experimented with various RL strategies using Jupyter Notebooks."
+                    ],
+                    stack: "PYTHON • REINFORCEMENT LEARNING • JUPYTER • GOOGLE COLAB • KAGGLE",
+                    status: "WORKING NOW"
+                },
                 movieNight: {
                     desc: "Intelligent movie recommendation application. Advanced RAG system with vector embeddings for personalized suggestions.",
                     highlights: [
@@ -155,6 +165,16 @@ const Hero = () => {
                 }
             },
             projects: {
+                atlasAI: {
+                    desc: "Secretário IA com capacidades conversacionais avançadas. Modelo de linguagem ajustado usando Reinforcement Learning para desempenho ótimo.",
+                    highlights: [
+                        "► Aplicação de técnicas de Reinforcement Learning para fine-tuning do modelo.",
+                        "► Desenvolvimento e treino em plataformas Google Colab e Kaggle.",
+                        "► Experimentação com várias estratégias de RL usando Jupyter Notebooks."
+                    ],
+                    stack: "PYTHON • REINFORCEMENT LEARNING • JUPYTER • GOOGLE COLAB • KAGGLE",
+                    status: "TRABALHANDO AGORA"
+                },
                 movieNight: {
                     desc: "Aplicação inteligente de recomendação de filmes. Sistema RAG avançado com embeddings vetoriais para sugestões personalizadas.",
                     highlights: [
@@ -517,11 +537,85 @@ const Hero = () => {
                         </div>
                     </section>
 
+
                     {/* FEATURED PROJECTS */}
                     <section>
                         <h2 style={{ fontFamily: '"Press Start 2P", cursive', color: 'var(--color-primary)', fontSize: '1.5rem', marginBottom: '30px', borderBottom: '2px solid var(--color-primary)', paddingBottom: '10px' }}>
                             <DecryptText text={t.sections.projects} speed={20} />
                         </h2>
+
+                        {/* Atlas AI Project - WORKING NOW */}
+                        <motion.div
+                            style={{
+                                background: 'rgba(5, 5, 10, 0.6)',
+                                backdropFilter: 'blur(5px)',
+                                border: '2px solid var(--color-primary)',
+                                padding: '25px',
+                                position: 'relative',
+                                overflow: 'hidden',
+                                marginBottom: '40px'
+                            }}
+                            animate={{
+                                boxShadow: [
+                                    '0 0 10px rgba(209, 0, 209, 0.4)',
+                                    '0 0 30px rgba(209, 0, 209, 0.8)',
+                                    '0 0 10px rgba(209, 0, 209, 0.4)'
+                                ],
+                                transition: {
+                                    duration: 2,
+                                    repeat: Infinity,
+                                    ease: "easeInOut"
+                                }
+                            }}
+                            whileHover={{
+                                scale: 1.02,
+                                boxShadow: '0 0 50px rgba(209, 0, 209, 1)',
+                                borderColor: '#fff',
+                                transition: {
+                                    duration: 0.3,
+                                    ease: "easeOut",
+                                    repeat: 0
+                                }
+                            }}
+                        >
+                            {/* Status Badge - WORKING NOW */}
+                            <div style={{
+                                position: 'absolute',
+                                top: '15px',
+                                right: '15px',
+                                background: 'rgba(209, 0, 209, 0.2)',
+                                border: '1px solid var(--color-primary)',
+                                color: '#fff',
+                                padding: '5px 12px',
+                                fontSize: '0.6rem',
+                                fontFamily: '"Press Start 2P", cursive',
+                                boxShadow: '0 0 10px rgba(209, 0, 209, 0.5)'
+                            }}>
+                                {t.projects.atlasAI.status}
+                            </div>
+
+                            <div style={{ position: 'absolute', top: 0, left: 0, width: '4px', height: '100%', background: 'var(--color-primary)' }} />
+                            <h3 style={{ fontFamily: '"Press Start 2P", cursive', fontSize: '1.2rem', color: '#fff', marginBottom: '15px', textShadow: '3px 3px 0px #000, 0 0 10px rgba(0,0,0,0.8)' }}>
+                                ATLAS AI
+                            </h3>
+                            <p style={{ color: '#e0e0e0', fontFamily: '"Rajdhani", sans-serif', fontSize: '1.1rem', marginBottom: '15px', textShadow: '1px 1px 2px #000' }}>
+                                {t.projects.atlasAI.desc}
+                            </p>
+                            {t.projects.atlasAI.highlights && (
+                                <ul style={{ listStyle: 'none', padding: 0, marginBottom: '15px' }}>
+                                    {t.projects.atlasAI.highlights.map((highlight, index) => (
+                                        <li key={index} style={{ color: '#e0e0e0', fontFamily: '"Rajdhani", sans-serif', fontSize: '1rem', marginBottom: '5px', textShadow: '1px 1px 2px #000' }}>
+                                            {highlight}
+                                        </li>
+                                    ))}
+                                </ul>
+                            )}
+                            <p style={{ color: 'var(--color-primary)', fontFamily: '"Press Start 2P", monospace', fontSize: '0.75rem', lineHeight: '1.6', textShadow: '2px 2px 0px #000', fontWeight: 'bold' }}>
+                                {t.projects.atlasAI.stack}
+                            </p>
+                        </motion.div>
+
+                        {/* Movie Night AI */}
                         <a href="https://movienightai.vercel.app/" target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none' }}>
                             <motion.div
                                 style={{
