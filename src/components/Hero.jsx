@@ -61,7 +61,7 @@ const Hero = () => {
                     desc3: "► Agile Methodology (Scrum), Azure DevOps, and Git."
                 },
                 holland: {
-                    title: "International Project in Fontys University of Applied Sciences (Netherlands)",
+                    title: "International Project in Fontys University Netherlands",
                     desc1: "► Intensive project on \"Transformation from linear to circular economy\".",
                     desc2: "► Applied strategies for sustainability and profit in an electric bike company.",
                     desc3: "► Technologies: Java."
