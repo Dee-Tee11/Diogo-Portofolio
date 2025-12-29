@@ -85,12 +85,13 @@ const Hero = () => {
                     status: "WORKING NOW"
                 },
                 movieNight: {
-                    desc: "Intelligent movie recommendation application. Advanced RAG system with vector embeddings for personalized suggestions.",
+                    desc: "Intelligent Movie Discovery Powered by RAG & Vector Search. Understands unique taste profiles using embeddings to provide hyper-personalized suggestions.",
                     highlights: [
-                        "► Architected scalable serverless solutions using Cloud Storage and Edge Functions.",
-                        "► Designed and managed CI/CD pipelines for automated DevOps workflows."
+                        "► RAG-Powered Recommendations with Multi-Vector Consensus Strategy.",
+                        "► AI Curator using Llama 3.1 for personalized, explainable suggestions.",
+                        "► Premium UX/UI: Glassmorphism with React 19, GSAP & Framer Motion."
                     ],
-                    stack: "REACT • TYPESCRIPT • PYTHON • RAG • GEN AI • ML",
+                    stack: "REACT 19 • TYPESCRIPT • FASTAPI • SUPABASE • LLAMA 3.1 • RAG • GEN AI • ML",
                     cta: "VIEW PROJECT ►"
                 },
                 portfolio: {
@@ -166,7 +167,7 @@ const Hero = () => {
             },
             projects: {
                 atlasAI: {
-                    desc: "Secretário IA com capacidades conversacionais avançadas. Modelo de linguagem ajustado usando Reinforcement Learning para desempenho ótimo.",
+                    desc: "Secretário IA com capacidades conversacionais avançadas. Modelo de linguagem ajustado usando Reinforcement Learning para melhor desempenho.",
                     highlights: [
                         "► Aplicação de técnicas de Reinforcement Learning para fine-tuning do modelo.",
                         "► Desenvolvimento e treino em plataformas Google Colab e Kaggle.",
@@ -176,12 +177,13 @@ const Hero = () => {
                     status: "A Desenvolver"
                 },
                 movieNight: {
-                    desc: "Aplicação inteligente de recomendação de filmes. Sistema RAG avançado com embeddings vetoriais para sugestões personalizadas.",
+                    desc: "Descoberta Inteligente de Filmes com RAG e Pesquisa Vetorial. Entende perfis de gosto únicos usando embeddings para sugestões hiper-personalizadas.",
                     highlights: [
-                        "► Arquitetei soluções serverless escaláveis usando Cloud Storage e Edge Functions.",
-                        "► Desenhei e geri pipelines de CI/CD para fluxos de trabalho DevOps automatizados."
+                        "► Recomendações RAG com Estratégia de Consenso Multi-Vetorial.",
+                        "► Curador IA usando Llama 3.1 para sugestões personalizadas e explicáveis.",
+                        "► UX/UI Premium: Glassmorphism com React 19, GSAP e Framer Motion."
                     ],
-                    stack: "REACT • TYPESCRIPT • PYTHON • RAG • GEN AI • ML",
+                    stack: "REACT 19 • TYPESCRIPT • FASTAPI • SUPABASE • LLAMA 3.1 • RAG • GEN AI • ML",
                     cta: "VER PROJETO ►"
                 },
                 portfolio: {
