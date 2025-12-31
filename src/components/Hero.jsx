@@ -69,19 +69,20 @@ const Hero = () => {
                 summer: {
                     title: "Summer Internship at VisitPlann",
                     role: "Back-End Developer",
-                    desc1: "► Mobile application for monument recognition via location and IA.",
-                    desc2: "► Technologies: Android Studio, Java."
+                    desc1: "► Mobile application for monument recognition via location, camera and IA.",
+                    desc2: "► Technologies: Android Studio, Java, OCR, Git"
                 }
             },
             projects: {
                 atlasAI: {
-                    desc: "AI Secretary with advanced conversational capabilities. Fine-tuned language model using Reinforcement Learning for optimal performance.",
+                    desc: "AI Secretary with advanced conversational capabilities. Fine-tuned language model using Reinforcement Learning for optimal performance. Now with MCP support.",
                     highlights: [
                         "► Applied Reinforcement Learning techniques for model fine-tuning.",
+                        "► Integrated Model Context Protocol (MCP) for advanced tool usage.",
                         "► Developed and trained on Google Colab and Kaggle platforms.",
                         "► Experimented with various RL strategies using Jupyter Notebooks."
                     ],
-                    stack: "PYTHON • REINFORCEMENT LEARNING • JUPYTER • GOOGLE COLAB • KAGGLE",
+                    stack: "PYTHON • MCP • REINFORCEMENT LEARNING • JUPYTER • GOOGLE COLAB • KAGGLE",
                     status: "WORKING NOW"
                 },
                 movieNight: {
@@ -161,19 +162,20 @@ const Hero = () => {
                 summer: {
                     title: "Estágio de Verão",
                     role: "Desenvolvedor Back-End",
-                    desc1: "► Aplicação móvel para reconhecimento de monumentos via localização e IA.",
-                    desc2: "► Tecnologias: Android Studio, Java."
+                    desc1: "► Aplicação móvel para reconhecimento de monumentos via localização, câmera e IA.",
+                    desc2: "► Tecnologias: Android Studio, Java, OCR, Git"
                 }
             },
             projects: {
                 atlasAI: {
-                    desc: "Secretário IA com capacidades conversacionais avançadas. Modelo de linguagem ajustado usando Reinforcement Learning para melhor desempenho.",
+                    desc: "Secretário IA com capacidades conversacionais avançadas. Modelo de linguagem ajustado usando Reinforcement Learning para melhor desempenho. Agora com suporte a MCP.",
                     highlights: [
                         "► Aplicação de técnicas de Reinforcement Learning para fine-tuning do modelo.",
                         "► Desenvolvimento e treino em plataformas Google Colab e Kaggle.",
+                        "► Integração do Model Context Protocol (MCP) para uso avançado de ferramentas.",
                         "► Experimentação com várias estratégias de RL usando Jupyter Notebooks."
                     ],
-                    stack: "PYTHON • REINFORCEMENT LEARNING • JUPYTER • GOOGLE COLAB • KAGGLE",
+                    stack: "PYTHON • MCP • REINFORCEMENT LEARNING • JUPYTER • GOOGLE COLAB • KAGGLE",
                     status: "A Desenvolver"
                 },
                 movieNight: {
@@ -748,7 +750,7 @@ const Hero = () => {
                                 <ul style={{ color: '#ccc', fontFamily: '"Rajdhani", sans-serif', fontSize: '1.1rem', listStyle: 'none', padding: 0 }}>
                                     <li>React / TypeScript / Next.js</li>
                                     <li>Python / Fast API</li>
-                                    <li>Gen AI / RAG / Machine Learning</li>
+                                    <li>Gen AI / RAG / Machine Learning / OCR / MCP</li>
                                     <li>Three.js / WebGL</li>
                                     <li>C# / .NET / Entity Framework</li>
                                     <li>SQL / MySQL / Vector DBs</li>
