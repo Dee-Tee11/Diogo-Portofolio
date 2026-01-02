@@ -36,7 +36,7 @@ const Hero = () => {
     const translations = {
         en: {
             portfolio: "PORTFOLIO",
-            role1: "AI ENGINEER",
+            role1: "JUNIOR AI ENGINEER",
             role2: "FULL STACK DEVELOPER",
             sections: {
                 profile: "PROFILE",
@@ -130,7 +130,7 @@ const Hero = () => {
         },
         pt: {
             portfolio: "PORTFÓLIO",
-            role1: "ENGENHEIRO DE IA",
+            role1: "ENGENHEIRO JUNIOR DE IA",
             role2: "DESENVOLVEDOR FULL STACK",
             sections: {
                 profile: "PERFIL",
