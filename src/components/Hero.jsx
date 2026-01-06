@@ -73,7 +73,7 @@ const Hero = () => {
                     title: "Summer Internship at VisitPlann",
                     role: "Back-End Developer",
                     desc1: "► Mobile application for monument recognition via location, camera and IA.",
-                    desc2: "► Technologies: Android Studio, Java, OCR, Git"
+                    desc2: "► Technologies: Android Studio, Java, Git"
                 }
             },
             projects: {
@@ -169,7 +169,7 @@ const Hero = () => {
                     title: "Estágio de Verão",
                     role: "Desenvolvedor Back-End",
                     desc1: "► Aplicação móvel para reconhecimento de monumentos via localização, câmera e IA.",
-                    desc2: "► Tecnologias: Android Studio, Java, OCR, Git"
+                    desc2: "► Tecnologias: Android Studio, Java, Git"
                 }
             },
             projects: {
@@ -476,7 +476,7 @@ const Hero = () => {
                                 <li style={{ marginBottom: '10px' }}>{t.experience.soluis.desc2}</li>
                                 <li style={{ marginBottom: '10px' }}>{t.experience.soluis.desc3}</li>
                                 <li style={{ marginBottom: '10px', color: 'var(--color-primary)', fontSize: '0.9rem', textShadow: '1px 1px 2px #000', fontWeight: 'bold' }}>
-                                    Stack: React, TypeScript, Python, Three.js, MySQL, Azure DevOps, C#
+                                    Stack: React, TypeScript, Python, Three.js, MySQL, Azure DevOps, C#, RAG Gen AI
                                 </li>
                             </ul>
                         </div>
