@@ -36,7 +36,7 @@ const Hero = () => {
     const translations = {
         en: {
             portfolio: "PORTFOLIO",
-            role1: "JUNIOR AI ENGINEER",
+            role1: "AI ENGINEER",
             role2: "FULL STACK DEVELOPER",
             sections: {
                 profile: "PROFILE",
@@ -61,10 +61,13 @@ const Hero = () => {
                     desc3: "► Agile Methodology (Scrum), Azure DevOps, and Git."
                 },
                 holland: {
-                    title: "International Project in Fontys University Netherlands",
-                    desc1: "► Intensive project on \"Transformation from linear to circular economy\".",
-                    desc2: "► Applied strategies for sustainability and profit in an electric bike company.",
-                    desc3: "► Technologies: Java."
+                    title: "International Project - Circular Economy in Tech",
+                    location: "Fontys University of Applied Sciences, Netherlands",
+                    desc1: "► Collaborated in international team of 6 students from 4 countries on intensive project focused on \"Transformation from Linear to Circular Economy\".",
+                    desc2: "► Applied creative problem-solving and out-of-the-box thinking to develop sustainable business strategies for e-bike company.",
+                    desc3: "► Developed cross-cultural teamwork skills while navigating different perspectives and approaches in high-pressure environment.",
+                    desc4: "► Presented recommendations on transforming business model toward circular economy principles.",
+                    focus: "Focus: Team collaboration, Creative thinking, Sustainability, Cross-cultural communication"
                 },
                 summer: {
                     title: "Summer Internship at VisitPlann",
@@ -130,7 +133,7 @@ const Hero = () => {
         },
         pt: {
             portfolio: "PORTFÓLIO",
-            role1: "ENGENHEIRO JUNIOR DE IA",
+            role1: "ENGENHEIRO DE IA",
             role2: "DESENVOLVEDOR FULL STACK",
             sections: {
                 profile: "PERFIL",
@@ -154,10 +157,13 @@ const Hero = () => {
                     desc3: "► Metodologia Ágil (Scrum), Azure DevOps e Git."
                 },
                 holland: {
-                    title: "Projeto Internacional (Países Baixos)",
-                    desc1: "► Projeto intensivo sobre \"Transformação da economia linear para circular\".",
-                    desc2: "► Aplicação de estratégias de sustentabilidade e lucro numa empresa de bicicletas elétricas.",
-                    desc3: "► Tecnologias: Java."
+                    title: "Projeto Internacional - Economia Circular em Tech",
+                    location: "Fontys University of Applied Sciences, Países Baixos",
+                    desc1: "► Colaboração em equipa internacional de 6 estudantes de 4 países num projeto intensivo focado na \"Transformação da Economia Linear para Circular\".",
+                    desc2: "► Aplicação de resolução criativa de problemas para desenvolver estratégias sustentáveis para empresa de e-bikes.",
+                    desc3: "► Desenvolvimento de competências interculturais e navegação por diferentes perspetivas em ambiente de alta pressão.",
+                    desc4: "► Apresentação de recomendações sobre a transformação do modelo de negócios para economia circular.",
+                    focus: "Foco: Colaboração em equipa, Pensamento criativo, Sustentabilidade, Comunicação intercultural"
                 },
                 summer: {
                     title: "Estágio de Verão",
@@ -511,10 +517,13 @@ const Hero = () => {
                                 <h3 style={{ fontFamily: '"Orbitron", sans-serif', fontSize: '1.4rem', color: '#fff', textShadow: '2px 2px 4px #000, 0 0 10px rgba(0,0,0,0.8)' }}>{t.experience.holland.title}</h3>
                                 <span style={{ fontFamily: '"Press Start 2P", monospace', fontSize: '0.7rem', color: 'var(--color-primary)', textShadow: '2px 2px 2px #000' }}>APR 2024</span>
                             </div>
+                            <h4 style={{ color: '#ccc', marginBottom: '15px', textShadow: '1px 1px 2px #000', fontSize: '1rem', fontFamily: '"Rajdhani", sans-serif', fontWeight: 'bold' }}>{t.experience.holland.location}</h4>
                             <ul style={{ listStyle: 'none', paddingLeft: '0', color: '#e0e0e0', fontFamily: '"Rajdhani", sans-serif', fontSize: '1.1rem', textShadow: '1px 1px 3px #000' }}>
                                 <li style={{ marginBottom: '10px' }}>{t.experience.holland.desc1}</li>
                                 <li style={{ marginBottom: '10px' }}>{t.experience.holland.desc2}</li>
                                 <li style={{ marginBottom: '10px' }}>{t.experience.holland.desc3}</li>
+                                <li style={{ marginBottom: '10px' }}>{t.experience.holland.desc4}</li>
+                                <li style={{ marginBottom: '10px', color: 'var(--color-primary)', fontSize: '0.95rem', fontWeight: 'bold' }}>{t.experience.holland.focus}</li>
                             </ul>
                         </div>
 
