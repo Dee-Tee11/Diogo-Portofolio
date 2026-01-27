@@ -6,19 +6,21 @@ import * as THREE from 'three';
 // Path to GLTF in public folder
 const modelPath = "/assets/3d/dream_computer_setup/scene.gltf";
 
-export default function ComputerModel({ scrollContainerRef }) {
+export default function ComputerModel({ scrollContainerRef, isMobile = false }) {
     const group = useRef();
     const { scene, animations } = useGLTF(modelPath);
     const { actions } = useAnimations(animations, group);
 
     useEffect(() => {
-        // Enable shadows
-        scene.traverse((child) => {
-            if (child.isMesh) {
-                child.castShadow = true;
-                child.receiveShadow = true;
-            }
-        });
+        // Enable shadows only on desktop for performance
+        if (!isMobile) {
+            scene.traverse((child) => {
+                if (child.isMesh) {
+                    child.castShadow = true;
+                    child.receiveShadow = true;
+                }
+            });
+        }
 
         // Loop animation (Continuous parts movement)
         if (actions) {
@@ -26,10 +28,11 @@ export default function ComputerModel({ scrollContainerRef }) {
             if (names.length > 0) {
                 const action = actions[names[0]];
                 action.reset().fadeIn(0.5).play();
-                action.timeScale = 0.5;
+                // Slower animation on mobile to reduce frame drops
+                action.timeScale = isMobile ? 0.3 : 0.5;
             }
         }
-    }, [scene, actions]);
+    }, [scene, actions, isMobile]);
 
     useFrame((state, delta) => {
         if (!scrollContainerRef.current || !group.current) return;
@@ -68,8 +71,8 @@ export default function ComputerModel({ scrollContainerRef }) {
             targetRot.z = THREE.MathUtils.lerp(midState.rot.z, endState.rot.z, p);
         }
 
-        // Apply Smoothing (Damping)
-        const damp = 4 * delta;
+        // Apply Smoothing (Damping) - Higher damping on mobile for better performance
+        const damp = isMobile ? 6 * delta : 4 * delta;
         group.current.position.lerp(targetPos, damp);
 
         // Smooth Rotation

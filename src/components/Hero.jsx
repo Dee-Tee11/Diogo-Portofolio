@@ -4,16 +4,19 @@ import { Canvas } from '@react-three/fiber';
 import { Environment } from '@react-three/drei';
 import DecryptText from './DecryptText';
 import ComputerModel from './ComputerModel';
+import { useIsMobile } from '../hooks/useIsMobile';
 
 const Hero = () => {
     const [lang, setLang] = useState('en');
     const scrollContainerRef = useRef(null);
+    const isMobile = useIsMobile();
 
     // EXISTING ANIMATION LOGIC
     const mouseX = useMotionValue(0);
     const mouseY = useMotionValue(0);
 
     const onMouseMove = (e) => {
+        if (isMobile) return; // Disable on mobile for performance
         const { innerWidth, innerHeight } = window;
         const x = (e.clientX / innerWidth) * 2 - 1;
         const y = (e.clientY / innerHeight) * 2 - 1;
@@ -22,9 +25,10 @@ const Hero = () => {
     };
 
     useEffect(() => {
+        if (isMobile) return; // Skip event listener on mobile
         window.addEventListener("mousemove", onMouseMove);
         return () => window.removeEventListener("mousemove", onMouseMove);
-    }, []);
+    }, [isMobile]);
 
     const smoothX = useSpring(mouseX, { stiffness: 100, damping: 20 });
     const smoothY = useSpring(mouseY, { stiffness: 100, damping: 20 });
@@ -249,14 +253,19 @@ const Hero = () => {
 
             {/* 3D Scene Layer */}
             <div style={{ position: 'absolute', inset: 0, zIndex: 5, pointerEvents: 'none' }}>
-                <Canvas shadows camera={{ position: [0, 0, 10], fov: 30 }}>
-                    <ambientLight intensity={0.8} />
-                    <hemisphereLight intensity={0.5} groundColor="#080820" />
-                    <directionalLight position={[5, 10, 5]} intensity={1.5} />
-                    <pointLight position={[0, 5, 0]} intensity={2} />
-                    <Environment preset="city" />
+                <Canvas
+                    shadows={!isMobile}
+                    dpr={[1, isMobile ? 1.5 : 2]}
+                    performance={{ min: 0.5 }}
+                    camera={{ position: [0, 0, 10], fov: 30 }}
+                >
+                    <ambientLight intensity={isMobile ? 0.6 : 0.8} />
+                    <hemisphereLight intensity={isMobile ? 0.3 : 0.5} groundColor="#080820" />
+                    <directionalLight position={[5, 10, 5]} intensity={isMobile ? 1 : 1.5} />
+                    <pointLight position={[0, 5, 0]} intensity={isMobile ? 1.5 : 2} />
+                    {!isMobile && <Environment preset="city" />}
                     <Suspense fallback={null}>
-                        <ComputerModel scrollContainerRef={scrollContainerRef} />
+                        <ComputerModel scrollContainerRef={scrollContainerRef} isMobile={isMobile} />
                     </Suspense>
                 </Canvas>
             </div>
@@ -291,8 +300,9 @@ const Hero = () => {
                     bottom: 0,
                     zIndex: 0,
                     overflow: 'hidden',
-                    rotateX: rotateX,
-                    rotateY: rotateY,
+                    // Disable 3D rotation on mobile for performance
+                    rotateX: isMobile ? 60 : rotateX,
+                    rotateY: isMobile ? 0 : rotateY,
                 }}
             >
                 {/* Moving Grid Pattern */}
@@ -439,12 +449,12 @@ const Hero = () => {
                             fontSize: '1.2rem',
                             lineHeight: '1.6',
                             background: 'rgba(0, 0, 0, 0.3)',
-                            backdropFilter: 'blur(3px)',
+                            backdropFilter: isMobile ? 'blur(1px)' : 'blur(3px)',
                             padding: '25px',
                             borderRadius: '15px',
                             border: '1px solid rgba(209, 0, 209, 0.3)',
                             boxShadow: '0 0 15px rgba(0, 0, 0, 0.3)',
-                            textShadow: '1px 1px 3px #000'
+                            textShadow: isMobile ? 'none' : '1px 1px 3px #000'
                         }}>
                             {t.profileText}
                         </p>
@@ -560,7 +570,7 @@ const Hero = () => {
                         <motion.div
                             style={{
                                 background: 'rgba(5, 5, 10, 0.6)',
-                                backdropFilter: 'blur(5px)',
+                                backdropFilter: isMobile ? 'blur(2px)' : 'blur(5px)',
                                 border: '2px solid var(--color-primary)',
                                 padding: '25px',
                                 position: 'relative',
@@ -579,7 +589,7 @@ const Hero = () => {
                                     ease: "easeInOut"
                                 }
                             }}
-                            whileHover={{
+                            whileHover={!isMobile ? {
                                 scale: 1.02,
                                 boxShadow: '0 0 50px rgba(209, 0, 209, 1)',
                                 borderColor: '#fff',
@@ -588,7 +598,7 @@ const Hero = () => {
                                     ease: "easeOut",
                                     repeat: 0
                                 }
-                            }}
+                            } : {}}
                         >
                             {/* Status Badge - WORKING NOW */}
                             <div style={{
@@ -631,8 +641,8 @@ const Hero = () => {
                         <a href="https://movienightai.vercel.app/" target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none' }}>
                             <motion.div
                                 style={{
-                                    background: 'rgba(5, 5, 10, 0.6)', // More transparent to see model
-                                    backdropFilter: 'blur(5px)',
+                                    background: 'rgba(5, 5, 10, 0.6)',
+                                    backdropFilter: isMobile ? 'blur(2px)' : 'blur(5px)',
                                     border: '1px solid var(--color-primary)',
                                     padding: '25px',
                                     cursor: 'pointer',
@@ -651,7 +661,7 @@ const Hero = () => {
                                         ease: "easeInOut"
                                     }
                                 }}
-                                whileHover={{
+                                whileHover={!isMobile ? {
                                     scale: 1.05,
                                     boxShadow: '0 0 40px rgba(209, 0, 209, 0.8)',
                                     borderColor: '#fff',
@@ -660,7 +670,7 @@ const Hero = () => {
                                         ease: "easeOut",
                                         repeat: 0
                                     }
-                                }}
+                                } : {}}
                             >
                                 <div style={{ position: 'absolute', top: 0, left: 0, width: '4px', height: '100%', background: 'var(--color-primary)' }} />
                                 <h3 style={{ fontFamily: '"Press Start 2P", cursive', fontSize: '1.2rem', color: '#fff', marginBottom: '15px', textShadow: '3px 3px 0px #000, 0 0 10px rgba(0,0,0,0.8)' }}>
@@ -692,7 +702,7 @@ const Hero = () => {
                             <motion.div
                                 style={{
                                     background: 'rgba(5, 5, 10, 0.6)',
-                                    backdropFilter: 'blur(5px)',
+                                    backdropFilter: isMobile ? 'blur(2px)' : 'blur(5px)',
                                     border: '1px solid var(--color-primary)',
                                     padding: '25px',
                                     cursor: 'pointer',
@@ -711,7 +721,7 @@ const Hero = () => {
                                         ease: "easeInOut"
                                     }
                                 }}
-                                whileHover={{
+                                whileHover={!isMobile ? {
                                     scale: 1.05,
                                     boxShadow: '0 0 40px rgba(209, 0, 209, 0.8)',
                                     borderColor: '#fff',
@@ -720,7 +730,7 @@ const Hero = () => {
                                         ease: "easeOut",
                                         repeat: 0
                                     }
-                                }}
+                                } : {}}
                             >
                                 <div style={{ position: 'absolute', top: 0, left: 0, width: '4px', height: '100%', background: 'var(--color-primary)' }} />
                                 <h3 style={{ fontFamily: '"Press Start 2P", cursive', fontSize: '1.2rem', color: '#fff', marginBottom: '15px', textShadow: '3px 3px 0px #000, 0 0 10px rgba(0,0,0,0.8)' }}>
