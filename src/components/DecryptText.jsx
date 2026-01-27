@@ -21,15 +21,23 @@ const DecryptText = ({ text, className, style, speed = 45, autoStart = false }) 
 
   useEffect(() => {
     const shouldStart = autoStart || isInView;
-    if (shouldStart && !hasStartedRef.current) {
+    // Reset hasStartedRef if text changes to allow re-animation
+    // But we need to distinguish between initial load and prop change
+    // For now, let's just force update if text changes
+
+    if (shouldStart) {
+      // Clear any existing interval
+      if (intervalRef.current) clearInterval(intervalRef.current);
+
       hasStartedRef.current = true;
       setIsScrambling(true);
 
       let iteration = 0;
 
       intervalRef.current = setInterval(() => {
-        setDisplayText(prev => {
-          const newText = text
+        setDisplayText(() => {
+          // Logic to mix current iteration with target text
+          return text
             .split('')
             .map((letter, index) => {
               if (index < iteration) {
@@ -38,7 +46,6 @@ const DecryptText = ({ text, className, style, speed = 45, autoStart = false }) 
               return characters[Math.floor(Math.random() * characters.length)];
             })
             .join('');
-          return newText;
         });
 
         if (iteration >= text.length) {
@@ -49,15 +56,19 @@ const DecryptText = ({ text, className, style, speed = 45, autoStart = false }) 
         iteration += 1 / 3;
       }, speed);
     }
+
+    return () => {
+      if (intervalRef.current) clearInterval(intervalRef.current);
+    }
   }, [isInView, autoStart, text, speed]);
 
   return (
     <motion.div
       ref={containerRef}
       className={className}
-      style={{ ...style, display: 'inline-block' }}
+      style={{ ...style, display: 'inline-block', minHeight: '1.5em' }} // Added minHeight to prevent layout shift
     >
-      {displayText || "\u00A0"} {/* Render non-breaking space if empty to hold height */}
+      {displayText || text}
     </motion.div>
   );
 };

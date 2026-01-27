@@ -46,6 +46,7 @@ const Hero = () => {
             portfolio: "PORTFOLIO",
             role1: "YOUR ROLE 1",
             role2: "YOUR ROLE 2",
+            name: "YOUR NAME",
             sections: {
                 profile: "PROFILE",
                 experience: "PROFESSIONAL EXPERIENCE",
@@ -55,13 +56,17 @@ const Hero = () => {
             profileText: "Your professional summary goes here. Describe your expertise, specializations, and what makes you unique as a professional. Keep it concise but impactful.",
             experience: {
                 company1: {
+                    company: "Current Company Name",
+                    period: "MON YEAR - PRESENT",
                     role: "Your Job Title",
+                    stack: "Your Tech Stack Here",
                     desc1: "► Your first responsibility or achievement.",
                     desc2: "► Your second responsibility or achievement.",
                     desc3: "► Your third responsibility or achievement."
                 },
                 company2: {
                     title: "Previous Company Name",
+                    period: "MON YEAR - MON YEAR",
                     role: "Your Previous Role",
                     desc1: "► What you accomplished here.",
                     desc2: "► Key projects or technologies you worked with.",
@@ -69,6 +74,7 @@ const Hero = () => {
                 },
                 project1: {
                     title: "Special Project or Internship",
+                    period: "MON YEAR - MON YEAR",
                     location: "Location (Optional)",
                     desc1: "► Project description and your role.",
                     desc2: "► Skills you developed or applied.",
@@ -78,6 +84,7 @@ const Hero = () => {
                 },
                 internship1: {
                     title: "Internship Name",
+                    period: "MON YEAR - MON YEAR",
                     role: "Your Role During Internship",
                     desc1: "► What you did during this internship.",
                     desc2: "► Technologies: List technologies used"
@@ -85,6 +92,7 @@ const Hero = () => {
             },
             projects: {
                 project1: {
+                    title: "YOUR MAIN PROJECT",
                     desc: "Your main project description. Explain what the project does, its purpose, and key technologies used.",
                     highlights: [
                         "► First key achievement or feature of this project.",
@@ -95,6 +103,7 @@ const Hero = () => {
                     status: "WORKING NOW" // Optional - only for active projects
                 },
                 project2: {
+                    title: "YOUR SECOND PROJECT",
                     desc: "Another project description. Highlight what makes this project special and the problems it solves.",
                     highlights: [
                         "► Key feature or capability.",
@@ -105,6 +114,7 @@ const Hero = () => {
                     cta: "VIEW PROJECT ►"
                 },
                 project3: {
+                    title: "YOUR PORTFOLIO 3D",
                     desc: "Third project description. Could be this portfolio itself or another showcase project.",
                     highlights: [
                         "► Implementation detail or feature.",
@@ -116,6 +126,16 @@ const Hero = () => {
             },
             skills: {
                 tech: "Tech Stack",
+                techList: [
+                    "Technology 1 / Framework 1",
+                    "Technology 2 / Framework 2",
+                    "Technology 3 / Framework 3",
+                    "Technology 4 / Tool 1",
+                    "Technology 5 / Tool 2",
+                    "Technology 6 / Tool 3",
+                    "Version Control / DevOps Tools",
+                    "Cloud Platform / Services"
+                ],
                 soft: "Soft Skills",
                 softList: [
                     "Skill Example 1",
@@ -138,48 +158,56 @@ const Hero = () => {
         },
         pt: {
             portfolio: "PORTFÓLIO",
-            role1: "SUA FUNÇÃO 1",
-            role2: "SUA FUNÇÃO 2",
+            role1: "A TUA FUNÇÃO 1",
+            role2: "A TUA FUNÇÃO 2",
+            name: "O TEU NOME",
             sections: {
                 profile: "PERFIL",
                 experience: "EXPERIÊNCIA PROFISSIONAL",
                 projects: "PROJETOS EM DESTAQUE",
                 skills: "COMPETÊNCIAS E TECNOLOGIAS"
             },
-            profileText: "Seu resumo profissional vai aqui. Descreva sua experiência, especializações e o que te torna único como profissional. Mantenha conciso mas impactante.",
+            profileText: "O teu resumo profissional. Descreve a tua experiência, especializações e o que te distingue como profissional. Mantém o texto conciso mas impactante.",
             experience: {
                 company1: {
-                    role: "Seu Cargo",
-                    desc1: "► Sua primeira responsabilidade ou conquista.",
-                    desc2: "► Sua segunda responsabilidade ou conquista.",
-                    desc3: "► Sua terceira responsabilidade ou conquista."
+                    company: "Nome da Empresa Atual",
+                    period: "MÊS ANO - PRESENTE",
+                    role: "O Teu Cargo",
+                    stack: "A Tua Stack Tecnológica",
+                    desc1: "► A tua primeira responsabilidade ou conquista.",
+                    desc2: "► A tua segunda responsabilidade ou conquista.",
+                    desc3: "► A tua terceira responsabilidade ou conquista."
                 },
                 company2: {
                     title: "Nome da Empresa Anterior",
-                    role: "Seu Cargo Anterior",
+                    period: "MÊS ANO - MÊS ANO",
+                    role: "O Teu Cargo Anterior",
                     desc1: "► O que você realizou aqui.",
                     desc2: "► Projetos-chave ou tecnologias com que trabalhou.",
                     desc3: "► Metodologias ou ferramentas utilizadas."
                 },
                 project1: {
                     title: "Projeto Especial ou Estágio",
+                    period: "MÊS ANO - MÊS ANO",
                     location: "Localização (Opcional)",
-                    desc1: "► Descrição do projeto e seu papel.",
-                    desc2: "► Competências que desenvolveu ou aplicou.",
+                    desc1: "► Descrição do projeto e do teu papel.",
+                    desc2: "► Competências que desenvolveste ou aplicaste.",
                     desc3: "► Resultados ou conquistas alcançados.",
                     desc4: "► Conquistas adicionais (opcional).",
                     focus: "Foco: Competências ou habilidades-chave"
                 },
                 internship1: {
                     title: "Nome do Estágio",
-                    role: "Seu Papel Durante o Estágio",
-                    desc1: "► O que você fez durante este estágio.",
+                    period: "MÊS ANO - MÊS ANO",
+                    role: "O Teu Papel Durante o Estágio",
+                    desc1: "► O que fizeste durante este estágio.",
                     desc2: "► Tecnologias: Lista de tecnologias utilizadas"
                 }
             },
             projects: {
                 project1: {
-                    desc: "Descrição do seu projeto principal. Explique o que o projeto faz, seu propósito e tecnologias-chave utilizadas.",
+                    title: "O TEU PROJETO PRINCIPAL",
+                    desc: "Descrição do teu projeto principal. Explica o que o projeto faz, o seu propósito e tecnologias-chave utilizadas.",
                     highlights: [
                         "► Primeira conquista ou funcionalidade-chave deste projeto.",
                         "► Segunda grande realização ou destaque técnico.",
@@ -189,7 +217,8 @@ const Hero = () => {
                     status: "A Desenvolver" // Opcional - apenas para projetos ativos
                 },
                 project2: {
-                    desc: "Outra descrição de projeto. Destaque o que torna este projeto especial e os problemas que resolve.",
+                    title: "O TEU SEGUNDO PROJETO",
+                    desc: "Outra descrição de projeto. Destaca o que torna este projeto especial e os problemas que resolve.",
                     highlights: [
                         "► Funcionalidade ou capacidade-chave.",
                         "► Inovação ou abordagem técnica.",
@@ -199,6 +228,7 @@ const Hero = () => {
                     cta: "VER PROJETO ►"
                 },
                 project3: {
+                    title: "O TEU PORTFÓLIO 3D",
                     desc: "Terceira descrição de projeto. Pode ser este portfólio ou outro projeto de demonstração.",
                     highlights: [
                         "► Detalhe de implementação ou funcionalidade.",
@@ -209,7 +239,17 @@ const Hero = () => {
                 }
             },
             skills: {
-                tech: "Tech Stack",
+                tech: "Stack Tecnológica",
+                techList: [
+                    "Tecnologia 1 / Framework 1",
+                    "Tecnologia 2 / Framework 2",
+                    "Tecnologia 3 / Framework 3",
+                    "Tecnologia 4 / Ferramenta 1",
+                    "Tecnologia 5 / Ferramenta 2",
+                    "Tecnologia 6 / Ferramenta 3",
+                    "Controlo de Versão / DevOps",
+                    "Plataforma Cloud / Serviços"
+                ],
                 soft: "Soft Skills",
                 softList: [
                     "Exemplo de Skill 1",
@@ -419,7 +459,7 @@ const Hero = () => {
                             ease: "easeInOut"
                         }}
                     >
-                        YOUR NAME
+                        {t.name}
                     </motion.h1>
                     <p style={{ fontFamily: '"Press Start 2P", monospace', color: 'var(--color-primary)', fontSize: 'clamp(0.8rem, 2vw, 1.2rem)', letterSpacing: '0.2em', lineHeight: '1.8' }}>
                         {t.role1}<br />
@@ -463,22 +503,22 @@ const Hero = () => {
 
                         {/* Current Company */}
                         <ExperienceCard
-                            company="Current Company Name"
-                            period="MON YEAR - PRESENT"
+                            company={t.experience.company1.company}
+                            period={t.experience.company1.period}
                             role={t.experience.company1.role}
                             descriptions={[
                                 t.experience.company1.desc1,
                                 t.experience.company1.desc2,
                                 t.experience.company1.desc3
                             ]}
-                            stack="Your Tech Stack Here"
+                            stack={t.experience.company1.stack}
                             isMobile={isMobile}
                         />
 
                         {/* Previous Experience */}
                         <ExperienceCard
                             title={t.experience.company2.title}
-                            period="MON YEAR - MON YEAR"
+                            period={t.experience.company2.period}
                             role={t.experience.company2.role}
                             descriptions={[
                                 t.experience.company2.desc1,
@@ -492,7 +532,7 @@ const Hero = () => {
                         {/* Special Project or Academic Experience */}
                         <ExperienceCard
                             title={t.experience.project1.title}
-                            period="MON YEAR"
+                            period={t.experience.project1.period}
                             location={t.experience.project1.location}
                             descriptions={[
                                 t.experience.project1.desc1,
@@ -508,7 +548,7 @@ const Hero = () => {
                         {/* Early Experience / Internship */}
                         <ExperienceCard
                             title={t.experience.internship1.title}
-                            period="MON YEAR - MON YEAR"
+                            period={t.experience.internship1.period}
                             role={t.experience.internship1.role}
                             descriptions={[
                                 t.experience.internship1.desc1,
@@ -525,7 +565,7 @@ const Hero = () => {
 
                         {/* Main Project - Active */}
                         <ProjectCard
-                            title="YOUR MAIN PROJECT"
+                            title={t.projects.project1.title}
                             description={t.projects.project1.desc}
                             highlights={t.projects.project1.highlights}
                             stack={t.projects.project1.stack}
@@ -536,7 +576,7 @@ const Hero = () => {
 
                         {/* Second Project */}
                         <ProjectCard
-                            title="YOUR SECOND PROJECT"
+                            title={t.projects.project2.title}
                             description={t.projects.project2.desc}
                             highlights={t.projects.project2.highlights}
                             stack={t.projects.project2.stack}
@@ -547,7 +587,7 @@ const Hero = () => {
 
                         {/* Portfolio Project */}
                         <ProjectCard
-                            title="YOUR PORTFOLIO 3D"
+                            title={t.projects.project3.title}
                             description={t.projects.project3.desc}
                             highlights={t.projects.project3.highlights}
                             stack={t.projects.project3.stack}
@@ -563,16 +603,7 @@ const Hero = () => {
                         <SkillsSection
                             techStack={{
                                 title: t.skills.tech,
-                                items: [
-                                    'Technology 1 / Framework 1',
-                                    'Technology 2 / Framework 2',
-                                    'Technology 3 / Framework 3',
-                                    'Technology 4 / Tool 1',
-                                    'Technology 5 / Tool 2',
-                                    'Technology 6 / Tool 3',
-                                    'Version Control / DevOps Tools',
-                                    'Cloud Platform / Services'
-                                ]
+                                items: t.skills.techList
                             }}
                             softSkills={{
                                 title: t.skills.soft,

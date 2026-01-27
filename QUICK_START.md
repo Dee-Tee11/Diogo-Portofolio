@@ -5,15 +5,18 @@
 ### 1️⃣ **Nome e Funções** 
 Ficheiro: `src/components/Hero.jsx`
 
-**Linha 423:**
+**Linhas 46-48 (Inglês / English):**
 ```javascript
-DIOGO TEIXEIRA → SEU NOME COMPLETO
+name: "YOUR NAME",
+role1: "YOUR ROLE 1",
+role2: "YOUR ROLE 2",
 ```
 
-**Linhas 47-48 (Inglês) e 144-145 (Português):**
+**Linhas 160-162 (Português):**
 ```javascript
-role1: "AI ENGINEER" → "SUA FUNÇÃO 1",
-role2: "FULL STACK DEVELOPER" → "SUA FUNÇÃO 2",
+name: "SEU NOME",
+role1: "SUA FUNÇÃO 1",
+role2: "SUA FUNÇÃO 2",
 ```
 
 ---
@@ -50,7 +53,33 @@ Edite ou copie este exemplo:
 />
 ```
 
-**Não esqueça de adicionar as traduções!** Ver linhas 52-82 (EN) e 149-178 (PT).
+**Inglês (Linhas 54-82):**
+```javascript
+experience: {
+    company1: {
+        company: "Current Company Name",
+        period: "MON YEAR - PRESENT",
+        role: "Your Job Title",
+        stack: "Your Tech Stack Here",
+        desc1: "► Your responsibility...",
+        // ...
+    }
+}
+```
+
+**Português (Linhas 169-199):**
+```javascript
+experience: {
+    company1: {
+        company: "Nome da Empresa Atual",
+        period: "MÊS ANO - PRESENTE",
+        role: "Seu Cargo",
+        stack: "Sua Stack Tecnológica",
+        desc1: "► Sua responsabilidade...",
+        // ...
+    }
+}
+```
 
 ---
 
@@ -68,38 +97,45 @@ Ficheiro: `src/components/Hero.jsx` (linhas 527-558)
 />
 ```
 
-**Não esqueça de adicionar as traduções!** Ver linhas 83-113 (EN) e 179-209 (PT).
+**Inglês (Linhas 86-116):**
+```javascript
+projects: {
+    project1: {
+        title: "YOUR MAIN PROJECT",
+        desc: "Description in English...",
+        highlights: ["► Highlight 1", "► Highlight 2"]
+    }
+}
+```
+
+**Português (Linhas 200-230):**
+```javascript
+projects: {
+    project1: {
+        title: "SEU PROJETO PRINCIPAL",
+        desc: "Descrição em Português...",
+        highlights: ["► Destaque 1", "► Destaque 2"]
+    }
+}
+```
 
 ---
 
 ### 5️⃣ **Skills**
 Ficheiro: `src/components/Hero.jsx`
 
-**Tech Stack (linhas 568-576):**
+**Inglês (Linhas 118-134):**
 ```javascript
-items: [
-    'Technology 1 / Framework 1',
-    'Technology 2 / Framework 2',
-    // Replace with your technologies...
-]
+techList: [ "Technology 1", "Technology 2" ],
+softList: [ "Skill 1", "Skill 2" ],
+languageList: [ "Language 1" ]
 ```
 
-**Soft Skills (linhas 120-128 EN, 215-223 PT):**
+**Português (Linhas 215-230):**
 ```javascript
-softList: [
-    "Skill Example 1",
-    "Skill Example 2",
-    // Replace with your soft skills...
-]
-```
-
-**Languages (linhas 131-134 EN, 226-229 PT):**
-```javascript
-languageList: [
-    "Language 1 (Proficiency Level)",
-    "Language 2 (Proficiency Level)",
-    // Add your languages...
-]
+techList: [ "Tecnologia 1", "Tecnologia 2" ],
+softList: [ "Competência 1", "Competência 2" ],
+languageList: [ "Idioma 1" ]
 ```
 
 ---
