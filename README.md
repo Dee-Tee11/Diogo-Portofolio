@@ -1,6 +1,12 @@
 # Diogo Teixeira
 ### AI Engineer & Full Stack Developer
 
+> **🎨 Use este portfólio como template!**  
+> Este é um portfólio 3D interativo com estética cyberpunk/retro que você pode personalizar com suas próprias informações.  
+> 📖 **[Guia Rápido de Personalização](./QUICK_START.md)** | 📚 **[Guia Completo](./TEMPLATE_GUIDE.md)**
+
+---
+
 Computer Engineer specializing in AI and Full Stack development. Experienced in delivering full-stack automation projects and integrating cutting-edge Generative AI into enterprise solutions. Dedicated to engineering excellence and continuous innovation.
 
 ---

@@ -5,6 +5,10 @@ import { Environment } from '@react-three/drei';
 import DecryptText from './DecryptText';
 import ComputerModel from './ComputerModel';
 import { useIsMobile } from '../hooks/useIsMobile';
+import SectionHeader from './SectionHeader';
+import ExperienceCard from './ExperienceCard';
+import ProjectCard from './ProjectCard';
+import SkillsSection from './SkillsSection';
 
 const Hero = () => {
     const [lang, setLang] = useState('en');
@@ -40,75 +44,73 @@ const Hero = () => {
     const translations = {
         en: {
             portfolio: "PORTFOLIO",
-            role1: "AI ENGINEER",
-            role2: "FULL STACK DEVELOPER",
+            role1: "YOUR ROLE 1",
+            role2: "YOUR ROLE 2",
             sections: {
                 profile: "PROFILE",
                 experience: "PROFESSIONAL EXPERIENCE",
                 projects: "FEATURED PROJECTS",
                 skills: "SKILLS & TECH"
             },
-            profileText: "Computer Engineer specializing in AI and Full Stack development. Experienced in delivering full-stack automation projects and integrating cutting-edge Generative AI into enterprise solutions. Dedicated to engineering excellence and continuous innovation.",
+            profileText: "Your professional summary goes here. Describe your expertise, specializations, and what makes you unique as a professional. Keep it concise but impactful.",
             experience: {
-                soluis: {
-                    role: "AI, Automation & Full Stack Engineer",
-                    desc1: "► Participation in various Full Stack automation projects.",
-                    desc2: "► Integration of Artificial Intelligence solutions into enterprise systems.",
-                    desc3: "► Worked with scalable serverless solutions using Cloud Storage and Edge Functions.",
-
+                company1: {
+                    role: "Your Job Title",
+                    desc1: "► Your first responsibility or achievement.",
+                    desc2: "► Your second responsibility or achievement.",
+                    desc3: "► Your third responsibility or achievement."
                 },
-                internship: {
-                    title: "Curricular Internship in Samsys",
-                    role: "Full Stack Developer",
-                    desc1: "► Backend and Frontend development (React TypeScript & .NET).",
-                    desc2: "► Created a plugin implemented in the company's main application.",
-                    desc3: "► Agile Methodology (Scrum), Azure DevOps, and Git."
+                company2: {
+                    title: "Previous Company Name",
+                    role: "Your Previous Role",
+                    desc1: "► What you accomplished here.",
+                    desc2: "► Key projects or technologies you worked with.",
+                    desc3: "► Methodologies or tools used."
                 },
-                holland: {
-                    title: "International Project - Circular Economy in Tech",
-                    location: "Fontys University of Applied Sciences, Netherlands",
-                    desc1: "► Collaborated in international team of 6 students from 4 countries on intensive project focused on \"Transformation from Linear to Circular Economy\".",
-                    desc2: "► Applied creative problem-solving and out-of-the-box thinking to develop sustainable business strategies for e-bike company.",
-                    desc3: "► Developed cross-cultural teamwork skills while navigating different perspectives and approaches in high-pressure environment.",
-                    desc4: "► Presented recommendations on transforming business model toward circular economy principles.",
-                    focus: "Focus: Team collaboration, Creative thinking, Sustainability, Cross-cultural communication"
+                project1: {
+                    title: "Special Project or Internship",
+                    location: "Location (Optional)",
+                    desc1: "► Project description and your role.",
+                    desc2: "► Skills you developed or applied.",
+                    desc3: "► Results or outcomes achieved.",
+                    desc4: "► Additional achievements (optional).",
+                    focus: "Focus: Key skills or competencies"
                 },
-                summer: {
-                    title: "Summer Internship at VisitPlann",
-                    role: "Back-End Developer",
-                    desc1: "► Mobile application for monument recognition via location, camera and IA.",
-                    desc2: "► Technologies: Android Studio, Java, Git"
+                internship1: {
+                    title: "Internship Name",
+                    role: "Your Role During Internship",
+                    desc1: "► What you did during this internship.",
+                    desc2: "► Technologies: List technologies used"
                 }
             },
             projects: {
-                atlasAI: {
-                    desc: "AI Secretary with advanced conversational capabilities. Fine-tuned language model using Reinforcement Learning for optimal performance. Now with MCP support.",
+                project1: {
+                    desc: "Your main project description. Explain what the project does, its purpose, and key technologies used.",
                     highlights: [
-                        "► Applied Reinforcement Learning techniques for model fine-tuning.",
-                        "► Integrated Model Context Protocol (MCP) for advanced tool usage.",
-                        "► Developed and trained on Google Colab and Kaggle platforms.",
-                        "► Experimented with various RL strategies using Jupyter Notebooks."
+                        "► First key achievement or feature of this project.",
+                        "► Second major accomplishment or technical highlight.",
+                        "► Third important aspect or innovation."
                     ],
-                    stack: "PYTHON • MCP • REINFORCEMENT LEARNING • JUPYTER • GOOGLE COLAB • KAGGLE",
-                    status: "WORKING NOW"
+                    stack: "TECH STACK 1 • TECH STACK 2 • TECH STACK 3 • TECH STACK 4",
+                    status: "WORKING NOW" // Optional - only for active projects
                 },
-                movieNight: {
-                    desc: "Intelligent Movie Discovery Powered by RAG & Vector Search. Understands unique taste profiles using embeddings to provide hyper-personalized suggestions.",
+                project2: {
+                    desc: "Another project description. Highlight what makes this project special and the problems it solves.",
                     highlights: [
-                        "► RAG-Powered Recommendations with Multi-Vector Consensus Strategy.",
-                        "► AI Curator using Llama 3.1 for personalized, explainable suggestions.",
-                        "► Premium UX/UI: Glassmorphism with React 19, GSAP & Framer Motion."
+                        "► Key feature or capability.",
+                        "► Technical innovation or approach.",
+                        "► User benefit or impact."
                     ],
-                    stack: "REACT 19 • TYPESCRIPT • FASTAPI • SUPABASE • LLAMA 3.1 • RAG • GEN AI • ML",
+                    stack: "TECH 1 • TECH 2 • TECH 3 • TECH 4",
                     cta: "VIEW PROJECT ►"
                 },
-                portfolio: {
-                    desc: "This interactive 3D portfolio. An immersive experience built with React Three Fiber to showcase skills and projects.",
+                project3: {
+                    desc: "Third project description. Could be this portfolio itself or another showcase project.",
                     highlights: [
-                        "► Implemented a responsive 3D scene with interactive elements.",
-                        "► Optimized performance and animations for smooth user experience."
+                        "► Implementation detail or feature.",
+                        "► Performance or design achievement."
                     ],
-                    stack: "REACT • THREE.JS • FRAMER MOTION • VITE",
+                    stack: "TECH STACK • FRAMEWORK • TOOLS",
                     cta: "VIEW REPO ►"
                 }
             },
@@ -116,19 +118,18 @@ const Hero = () => {
                 tech: "Tech Stack",
                 soft: "Soft Skills",
                 softList: [
-                    "Agile Methodology & Scrum",
-                    "Critical Thinking & Problem Solving",
-                    "Teamwork & Autonomy",
-                    "Fast Learning",
-                    "Effective Communication",
-                    "Adaptability & Flexibility",
-                    "Time Management",
-                    "Responsible"
+                    "Skill Example 1",
+                    "Skill Example 2",
+                    "Skill Example 3",
+                    "Skill Example 4",
+                    "Skill Example 5",
+                    "Skill Example 6"
                 ],
                 languages: "Languages",
                 languageList: [
-                    "Portuguese (Native)",
-                    "English (Fluent / C1)"
+                    "Language 1 (Proficiency Level)",
+                    "Language 2 (Proficiency Level)",
+                    "Language 3 (Proficiency Level)"
                 ]
             },
             footer: {
@@ -137,74 +138,73 @@ const Hero = () => {
         },
         pt: {
             portfolio: "PORTFÓLIO",
-            role1: "ENGENHEIRO DE IA",
-            role2: "DESENVOLVEDOR FULL STACK",
+            role1: "SUA FUNÇÃO 1",
+            role2: "SUA FUNÇÃO 2",
             sections: {
                 profile: "PERFIL",
                 experience: "EXPERIÊNCIA PROFISSIONAL",
                 projects: "PROJETOS EM DESTAQUE",
                 skills: "COMPETÊNCIAS E TECNOLOGIAS"
             },
-            profileText: "Engenheiro Informático especializado em IA e desenvolvimento Full Stack. Experiente na entrega de projetos de automação full-stack e na integração de IA Generativa de vanguarda em soluções empresariais. Dedicado à excelência na engenharia e à inovação contínua.",
+            profileText: "Seu resumo profissional vai aqui. Descreva sua experiência, especializações e o que te torna único como profissional. Mantenha conciso mas impactante.",
             experience: {
-                soluis: {
-                    role: "Engenheiro de IA, Automação & Full Stack",
-                    desc1: "► Participação em vários projetos de automação Full Stack.",
-                    desc2: "► Integração de soluções de Inteligência Artificial em sistemas empresariais.",
-                    desc3: "► Trabalhei com soluções serverless escaláveis usando Cloud Storage e Edge Functions.",
+                company1: {
+                    role: "Seu Cargo",
+                    desc1: "► Sua primeira responsabilidade ou conquista.",
+                    desc2: "► Sua segunda responsabilidade ou conquista.",
+                    desc3: "► Sua terceira responsabilidade ou conquista."
                 },
-                internship: {
-                    title: "Estágio Curricular na Samsys",
-                    role: "Desenvolvedor Full Stack",
-                    desc1: "► Desenvolvimento Backend e Frontend (React TypeScript e .NET).",
-                    desc2: "► Criação de um plugin implementado na aplicação principal da empresa.",
-                    desc3: "► Metodologia Ágil (Scrum), Azure DevOps e Git."
+                company2: {
+                    title: "Nome da Empresa Anterior",
+                    role: "Seu Cargo Anterior",
+                    desc1: "► O que você realizou aqui.",
+                    desc2: "► Projetos-chave ou tecnologias com que trabalhou.",
+                    desc3: "► Metodologias ou ferramentas utilizadas."
                 },
-                holland: {
-                    title: "Projeto Internacional - Economia Circular em Tech",
-                    location: "Fontys University of Applied Sciences, Países Baixos",
-                    desc1: "► Colaboração em equipa internacional de 6 estudantes de 4 países num projeto intensivo focado na \"Transformação da Economia Linear para Circular\".",
-                    desc2: "► Aplicação de resolução criativa de problemas para desenvolver estratégias sustentáveis para empresa de e-bikes.",
-                    desc3: "► Desenvolvimento de competências interculturais e navegação por diferentes perspetivas em ambiente de alta pressão.",
-                    desc4: "► Apresentação de recomendações sobre a transformação do modelo de negócios para economia circular.",
-                    focus: "Foco: Colaboração em equipa, Pensamento criativo, Sustentabilidade, Comunicação intercultural"
+                project1: {
+                    title: "Projeto Especial ou Estágio",
+                    location: "Localização (Opcional)",
+                    desc1: "► Descrição do projeto e seu papel.",
+                    desc2: "► Competências que desenvolveu ou aplicou.",
+                    desc3: "► Resultados ou conquistas alcançados.",
+                    desc4: "► Conquistas adicionais (opcional).",
+                    focus: "Foco: Competências ou habilidades-chave"
                 },
-                summer: {
-                    title: "Estágio de Verão",
-                    role: "Desenvolvedor Back-End",
-                    desc1: "► Aplicação móvel para reconhecimento de monumentos via localização, câmera e IA.",
-                    desc2: "► Tecnologias: Android Studio, Java, Git"
+                internship1: {
+                    title: "Nome do Estágio",
+                    role: "Seu Papel Durante o Estágio",
+                    desc1: "► O que você fez durante este estágio.",
+                    desc2: "► Tecnologias: Lista de tecnologias utilizadas"
                 }
             },
             projects: {
-                atlasAI: {
-                    desc: "Secretário IA com capacidades conversacionais avançadas. Modelo de linguagem ajustado usando Reinforcement Learning para melhor desempenho. Agora com suporte a MCP.",
+                project1: {
+                    desc: "Descrição do seu projeto principal. Explique o que o projeto faz, seu propósito e tecnologias-chave utilizadas.",
                     highlights: [
-                        "► Aplicação de técnicas de Reinforcement Learning para fine-tuning do modelo.",
-                        "► Desenvolvimento e treino em plataformas Google Colab e Kaggle.",
-                        "► Integração do Model Context Protocol (MCP) para uso avançado de ferramentas.",
-                        "► Experimentação com várias estratégias de RL usando Jupyter Notebooks."
+                        "► Primeira conquista ou funcionalidade-chave deste projeto.",
+                        "► Segunda grande realização ou destaque técnico.",
+                        "► Terceiro aspeto importante ou inovação."
                     ],
-                    stack: "PYTHON • MCP • REINFORCEMENT LEARNING • JUPYTER • GOOGLE COLAB • KAGGLE",
-                    status: "A Desenvolver"
+                    stack: "TECH STACK 1 • TECH STACK 2 • TECH STACK 3 • TECH STACK 4",
+                    status: "A Desenvolver" // Opcional - apenas para projetos ativos
                 },
-                movieNight: {
-                    desc: "Descoberta Inteligente de Filmes com RAG e Pesquisa Vetorial. Entende perfis de gosto únicos usando embeddings para sugestões hiper-personalizadas.",
+                project2: {
+                    desc: "Outra descrição de projeto. Destaque o que torna este projeto especial e os problemas que resolve.",
                     highlights: [
-                        "► Recomendações RAG com Estratégia de Consenso Multi-Vetorial.",
-                        "► Curador IA usando Llama 3.1 para sugestões personalizadas e explicáveis.",
-                        "► UX/UI Premium: Glassmorphism com React 19, GSAP e Framer Motion."
+                        "► Funcionalidade ou capacidade-chave.",
+                        "► Inovação ou abordagem técnica.",
+                        "► Benefício ou impacto para o utilizador."
                     ],
-                    stack: "REACT 19 • TYPESCRIPT • FASTAPI • SUPABASE • LLAMA 3.1 • RAG • GEN AI • ML",
+                    stack: "TECH 1 • TECH 2 • TECH 3 • TECH 4",
                     cta: "VER PROJETO ►"
                 },
-                portfolio: {
-                    desc: "Este portfólio 3D interativo. Uma experiência imersiva construída com React Three Fiber para demonstrar competências e projetos.",
+                project3: {
+                    desc: "Terceira descrição de projeto. Pode ser este portfólio ou outro projeto de demonstração.",
                     highlights: [
-                        "► Implementação de uma cena 3D responsiva com elementos interativos.",
-                        "► Otimização de performance e animações para uma experiência fluida."
+                        "► Detalhe de implementação ou funcionalidade.",
+                        "► Conquista de desempenho ou design."
                     ],
-                    stack: "REACT • THREE.JS • FRAMER MOTION • VITE",
+                    stack: "TECH STACK • FRAMEWORK • FERRAMENTAS",
                     cta: "VER REPO ►"
                 }
             },
@@ -212,19 +212,18 @@ const Hero = () => {
                 tech: "Tech Stack",
                 soft: "Soft Skills",
                 softList: [
-                    "Metodologia Ágil e Scrum",
-                    "Pensamento Crítico e Resolução de Problemas",
-                    "Trabalho em Equipa e Autonomia",
-                    "Aprendizagem Rápida",
-                    "Comunicação Eficaz",
-                    "Adaptabilidade e Flexibilidade",
-                    "Gestão de Tempo",
-                    "Responsável"
+                    "Exemplo de Skill 1",
+                    "Exemplo de Skill 2",
+                    "Exemplo de Skill 3",
+                    "Exemplo de Skill 4",
+                    "Exemplo de Skill 5",
+                    "Exemplo de Skill 6"
                 ],
                 languages: "Idiomas",
                 languageList: [
-                    "Português (Nativo)",
-                    "Inglês (Fluente / C1)"
+                    "Idioma 1 (Nível de Proficiência)",
+                    "Idioma 2 (Nível de Proficiência)",
+                    "Idioma 3 (Nível de Proficiência)"
                 ]
             },
             footer: {
@@ -420,7 +419,7 @@ const Hero = () => {
                             ease: "easeInOut"
                         }}
                     >
-                        DIOGO TEIXEIRA
+                        YOUR NAME
                     </motion.h1>
                     <p style={{ fontFamily: '"Press Start 2P", monospace', color: 'var(--color-primary)', fontSize: 'clamp(0.8rem, 2vw, 1.2rem)', letterSpacing: '0.2em', lineHeight: '1.8' }}>
                         {t.role1}<br />
@@ -440,9 +439,7 @@ const Hero = () => {
 
                     {/* PROFILE */}
                     <section>
-                        <h2 style={{ fontFamily: '"Press Start 2P", cursive', color: 'var(--color-primary)', fontSize: '1.5rem', marginBottom: '30px', borderBottom: '2px solid var(--color-primary)', paddingBottom: '10px', textShadow: '2px 2px 4px #000' }}>
-                            <DecryptText text={t.sections.profile} speed={20} />
-                        </h2>
+                        <SectionHeader text={t.sections.profile} speed={20} />
                         <p style={{
                             color: '#e0e0e0',
                             fontFamily: '"Rajdhani", sans-serif',
@@ -462,338 +459,130 @@ const Hero = () => {
 
                     {/* PROFESSIONAL EXPERIENCE */}
                     <section>
-                        <h2 style={{ fontFamily: '"Press Start 2P", cursive', color: 'var(--color-primary)', fontSize: '1.5rem', marginBottom: '30px', borderBottom: '2px solid var(--color-primary)', paddingBottom: '10px' }}>
-                            <DecryptText text={t.sections.experience} speed={15} />
-                        </h2>
+                        <SectionHeader text={t.sections.experience} speed={15} />
 
-                        {/* Soluis (Updated) */}
-                        <div style={{
-                            marginBottom: '40px',
-                            background: 'rgba(0, 0, 0, 0.3)',
-                            backdropFilter: 'blur(3px)',
-                            padding: '25px',
-                            borderRadius: '15px',
-                            border: '1px solid rgba(209, 0, 209, 0.3)',
-                            boxShadow: '0 0 15px rgba(0, 0, 0, 0.3)'
-                        }}>
-                            <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'baseline', marginBottom: '10px', flexWrap: 'wrap' }}>
-                                <h3 style={{ fontFamily: '"Orbitron", sans-serif', fontSize: '1.4rem', color: '#fff', textShadow: '2px 2px 4px #000, 0 0 10px rgba(0,0,0,0.8)' }}>Soluis</h3>
-                                <span style={{ fontFamily: '"Press Start 2P", monospace', fontSize: '0.7rem', color: 'var(--color-primary)', textShadow: '2px 2px 2px #000' }}>JAN 2025 - PRESENT</span>
-                            </div>
-                            <h4 style={{ color: '#fff', marginBottom: '15px', textShadow: '2px 2px 4px #000', fontWeight: 'bold' }}>{t.experience.soluis.role}</h4>
-                            <ul style={{ listStyle: 'none', paddingLeft: '0', color: '#e0e0e0', fontFamily: '"Rajdhani", sans-serif', fontSize: '1.1rem', textShadow: '1px 1px 3px #000' }}>
-                                <li style={{ marginBottom: '10px' }}>{t.experience.soluis.desc1}</li>
-                                <li style={{ marginBottom: '10px' }}>{t.experience.soluis.desc2}</li>
-                                <li style={{ marginBottom: '10px' }}>{t.experience.soluis.desc3}</li>
-                                <li style={{ marginBottom: '10px', color: 'var(--color-primary)', fontSize: '0.9rem', textShadow: '1px 1px 2px #000', fontWeight: 'bold' }}>
-                                    Stack: React, TypeScript, Python, Three.js, MySQL, Azure DevOps, C#, RAG Gen AI
-                                </li>
-                            </ul>
-                        </div>
+                        {/* Current Company */}
+                        <ExperienceCard
+                            company="Current Company Name"
+                            period="MON YEAR - PRESENT"
+                            role={t.experience.company1.role}
+                            descriptions={[
+                                t.experience.company1.desc1,
+                                t.experience.company1.desc2,
+                                t.experience.company1.desc3
+                            ]}
+                            stack="Your Tech Stack Here"
+                            isMobile={isMobile}
+                        />
 
-                        {/* Curricular Internship */}
-                        <div style={{
-                            marginBottom: '40px',
-                            background: 'rgba(0, 0, 0, 0.3)',
-                            backdropFilter: 'blur(3px)',
-                            padding: '25px',
-                            borderRadius: '15px',
-                            border: '1px solid rgba(209, 0, 209, 0.3)',
-                            boxShadow: '0 0 15px rgba(0, 0, 0, 0.3)'
-                        }}>
-                            <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'baseline', marginBottom: '10px', flexWrap: 'wrap' }}>
-                                <h3 style={{ fontFamily: '"Orbitron", sans-serif', fontSize: '1.4rem', color: '#fff', textShadow: '2px 2px 4px #000, 0 0 10px rgba(0,0,0,0.8)' }}>{t.experience.internship.title}</h3>
-                                <span style={{ fontFamily: '"Press Start 2P", monospace', fontSize: '0.7rem', color: 'var(--color-primary)', textShadow: '2px 2px 2px #000' }}>SEP 2024 - DEC 2024</span>
-                            </div>
-                            <h4 style={{ color: '#fff', marginBottom: '15px', textShadow: '2px 2px 4px #000', fontWeight: 'bold' }}>{t.experience.internship.role}</h4>
-                            <ul style={{ listStyle: 'none', paddingLeft: '0', color: '#e0e0e0', fontFamily: '"Rajdhani", sans-serif', fontSize: '1.1rem', textShadow: '1px 1px 3px #000' }}>
-                                <li style={{ marginBottom: '10px' }}>{t.experience.internship.desc1}</li>
-                                <li style={{ marginBottom: '10px' }}>{t.experience.internship.desc2}</li>
-                                <li style={{ marginBottom: '10px' }}>{t.experience.internship.desc3}</li>
-                            </ul>
-                        </div>
+                        {/* Previous Experience */}
+                        <ExperienceCard
+                            title={t.experience.company2.title}
+                            period="MON YEAR - MON YEAR"
+                            role={t.experience.company2.role}
+                            descriptions={[
+                                t.experience.company2.desc1,
+                                t.experience.company2.desc2,
+                                t.experience.company2.desc3
+                            ]}
+                            isMobile={isMobile}
+                        />
 
-                        {/* International Project Holland */}
-                        <div style={{
-                            marginBottom: '40px',
-                            background: 'rgba(0, 0, 0, 0.3)',
-                            backdropFilter: 'blur(3px)',
-                            padding: '25px',
-                            borderRadius: '15px',
-                            border: '1px solid rgba(209, 0, 209, 0.3)',
-                            boxShadow: '0 0 15px rgba(0, 0, 0, 0.3)'
-                        }}>
-                            <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'baseline', marginBottom: '10px', flexWrap: 'wrap' }}>
-                                <h3 style={{ fontFamily: '"Orbitron", sans-serif', fontSize: '1.4rem', color: '#fff', textShadow: '2px 2px 4px #000, 0 0 10px rgba(0,0,0,0.8)' }}>{t.experience.holland.title}</h3>
-                                <span style={{ fontFamily: '"Press Start 2P", monospace', fontSize: '0.7rem', color: 'var(--color-primary)', textShadow: '2px 2px 2px #000' }}>APR 2024</span>
-                            </div>
-                            <h4 style={{ color: '#ccc', marginBottom: '15px', textShadow: '1px 1px 2px #000', fontSize: '1rem', fontFamily: '"Rajdhani", sans-serif', fontWeight: 'bold' }}>{t.experience.holland.location}</h4>
-                            <ul style={{ listStyle: 'none', paddingLeft: '0', color: '#e0e0e0', fontFamily: '"Rajdhani", sans-serif', fontSize: '1.1rem', textShadow: '1px 1px 3px #000' }}>
-                                <li style={{ marginBottom: '10px' }}>{t.experience.holland.desc1}</li>
-                                <li style={{ marginBottom: '10px' }}>{t.experience.holland.desc2}</li>
-                                <li style={{ marginBottom: '10px' }}>{t.experience.holland.desc3}</li>
-                                <li style={{ marginBottom: '10px' }}>{t.experience.holland.desc4}</li>
-                                <li style={{ marginBottom: '10px', color: 'var(--color-primary)', fontSize: '0.95rem', fontWeight: 'bold' }}>{t.experience.holland.focus}</li>
-                            </ul>
-                        </div>
 
-                        {/* Summer Internship */}
-                        <div style={{
-                            marginBottom: '40px',
-                            background: 'rgba(0, 0, 0, 0.3)',
-                            backdropFilter: 'blur(3px)',
-                            padding: '25px',
-                            borderRadius: '15px',
-                            border: '1px solid rgba(209, 0, 209, 0.3)',
-                            boxShadow: '0 0 15px rgba(0, 0, 0, 0.3)'
-                        }}>
-                            <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'baseline', marginBottom: '10px', flexWrap: 'wrap' }}>
-                                <h3 style={{ fontFamily: '"Orbitron", sans-serif', fontSize: '1.4rem', color: '#fff', textShadow: '2px 2px 4px #000, 0 0 10px rgba(0,0,0,0.8)' }}>{t.experience.summer.title}</h3>
-                                <span style={{ fontFamily: '"Press Start 2P", monospace', fontSize: '0.7rem', color: 'var(--color-primary)', textShadow: '2px 2px 2px #000' }}>JUL 2022 - AUG 2022</span>
-                            </div>
-                            <h4 style={{ color: '#fff', marginBottom: '15px', textShadow: '2px 2px 4px #000', fontWeight: 'bold' }}>{t.experience.summer.role}</h4>
-                            <ul style={{ listStyle: 'none', paddingLeft: '0', color: '#e0e0e0', fontFamily: '"Rajdhani", sans-serif', fontSize: '1.1rem', textShadow: '1px 1px 3px #000' }}>
-                                <li style={{ marginBottom: '10px' }}>{t.experience.summer.desc1}</li>
-                                <li style={{ marginBottom: '10px' }}>{t.experience.summer.desc2}</li>
-                            </ul>
-                        </div>
+                        {/* Special Project or Academic Experience */}
+                        <ExperienceCard
+                            title={t.experience.project1.title}
+                            period="MON YEAR"
+                            location={t.experience.project1.location}
+                            descriptions={[
+                                t.experience.project1.desc1,
+                                t.experience.project1.desc2,
+                                t.experience.project1.desc3,
+                                t.experience.project1.desc4,
+                                t.experience.project1.focus
+                            ]}
+                            isMobile={isMobile}
+                        />
+
+
+                        {/* Early Experience / Internship */}
+                        <ExperienceCard
+                            title={t.experience.internship1.title}
+                            period="MON YEAR - MON YEAR"
+                            role={t.experience.internship1.role}
+                            descriptions={[
+                                t.experience.internship1.desc1,
+                                t.experience.internship1.desc2
+                            ]}
+                            isMobile={isMobile}
+                        />
                     </section>
 
 
                     {/* FEATURED PROJECTS */}
                     <section>
-                        <h2 style={{ fontFamily: '"Press Start 2P", cursive', color: 'var(--color-primary)', fontSize: '1.5rem', marginBottom: '30px', borderBottom: '2px solid var(--color-primary)', paddingBottom: '10px' }}>
-                            <DecryptText text={t.sections.projects} speed={20} />
-                        </h2>
+                        <SectionHeader text={t.sections.projects} speed={20} />
 
-                        {/* Atlas AI Project - WORKING NOW */}
-                        <motion.div
-                            style={{
-                                background: 'rgba(5, 5, 10, 0.6)',
-                                backdropFilter: isMobile ? 'blur(2px)' : 'blur(5px)',
-                                border: '2px solid var(--color-primary)',
-                                padding: '25px',
-                                position: 'relative',
-                                overflow: 'hidden',
-                                marginBottom: '40px'
-                            }}
-                            animate={{
-                                boxShadow: [
-                                    '0 0 10px rgba(209, 0, 209, 0.4)',
-                                    '0 0 30px rgba(209, 0, 209, 0.8)',
-                                    '0 0 10px rgba(209, 0, 209, 0.4)'
-                                ],
-                                transition: {
-                                    duration: 2,
-                                    repeat: Infinity,
-                                    ease: "easeInOut"
-                                }
-                            }}
-                            whileHover={!isMobile ? {
-                                scale: 1.02,
-                                boxShadow: '0 0 50px rgba(209, 0, 209, 1)',
-                                borderColor: '#fff',
-                                transition: {
-                                    duration: 0.3,
-                                    ease: "easeOut",
-                                    repeat: 0
-                                }
-                            } : {}}
-                        >
-                            {/* Status Badge - WORKING NOW */}
-                            <div style={{
-                                position: 'absolute',
-                                top: '15px',
-                                right: '15px',
-                                background: 'rgba(209, 0, 209, 0.2)',
-                                border: '1px solid var(--color-primary)',
-                                color: '#fff',
-                                padding: '5px 12px',
-                                fontSize: '0.6rem',
-                                fontFamily: '"Press Start 2P", cursive',
-                                boxShadow: '0 0 10px rgba(209, 0, 209, 0.5)'
-                            }}>
-                                {t.projects.atlasAI.status}
-                            </div>
+                        {/* Main Project - Active */}
+                        <ProjectCard
+                            title="YOUR MAIN PROJECT"
+                            description={t.projects.project1.desc}
+                            highlights={t.projects.project1.highlights}
+                            stack={t.projects.project1.stack}
+                            status={t.projects.project1.status}
+                            isWorkingNow={true}
+                            isMobile={isMobile}
+                        />
 
-                            <div style={{ position: 'absolute', top: 0, left: 0, width: '4px', height: '100%', background: 'var(--color-primary)' }} />
-                            <h3 style={{ fontFamily: '"Press Start 2P", cursive', fontSize: '1.2rem', color: '#fff', marginBottom: '15px', textShadow: '3px 3px 0px #000, 0 0 10px rgba(0,0,0,0.8)' }}>
-                                ATLAS AI
-                            </h3>
-                            <p style={{ color: '#e0e0e0', fontFamily: '"Rajdhani", sans-serif', fontSize: '1.1rem', marginBottom: '15px', textShadow: '1px 1px 2px #000' }}>
-                                {t.projects.atlasAI.desc}
-                            </p>
-                            {t.projects.atlasAI.highlights && (
-                                <ul style={{ listStyle: 'none', padding: 0, marginBottom: '15px' }}>
-                                    {t.projects.atlasAI.highlights.map((highlight, index) => (
-                                        <li key={index} style={{ color: '#e0e0e0', fontFamily: '"Rajdhani", sans-serif', fontSize: '1rem', marginBottom: '5px', textShadow: '1px 1px 2px #000' }}>
-                                            {highlight}
-                                        </li>
-                                    ))}
-                                </ul>
-                            )}
-                            <p style={{ color: 'var(--color-primary)', fontFamily: '"Press Start 2P", monospace', fontSize: '0.75rem', lineHeight: '1.6', textShadow: '2px 2px 0px #000', fontWeight: 'bold' }}>
-                                {t.projects.atlasAI.stack}
-                            </p>
-                        </motion.div>
-
-                        {/* Movie Night AI */}
-                        <a href="https://movienightai.vercel.app/" target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none' }}>
-                            <motion.div
-                                style={{
-                                    background: 'rgba(5, 5, 10, 0.6)',
-                                    backdropFilter: isMobile ? 'blur(2px)' : 'blur(5px)',
-                                    border: '1px solid var(--color-primary)',
-                                    padding: '25px',
-                                    cursor: 'pointer',
-                                    position: 'relative',
-                                    overflow: 'hidden'
-                                }}
-                                animate={{
-                                    boxShadow: [
-                                        '0 0 5px rgba(209, 0, 209, 0.2)',
-                                        '0 0 20px rgba(209, 0, 209, 0.6)',
-                                        '0 0 5px rgba(209, 0, 209, 0.2)'
-                                    ],
-                                    transition: {
-                                        duration: 2,
-                                        repeat: Infinity,
-                                        ease: "easeInOut"
-                                    }
-                                }}
-                                whileHover={!isMobile ? {
-                                    scale: 1.05,
-                                    boxShadow: '0 0 40px rgba(209, 0, 209, 0.8)',
-                                    borderColor: '#fff',
-                                    transition: {
-                                        duration: 0.3,
-                                        ease: "easeOut",
-                                        repeat: 0
-                                    }
-                                } : {}}
-                            >
-                                <div style={{ position: 'absolute', top: 0, left: 0, width: '4px', height: '100%', background: 'var(--color-primary)' }} />
-                                <h3 style={{ fontFamily: '"Press Start 2P", cursive', fontSize: '1.2rem', color: '#fff', marginBottom: '15px', textShadow: '3px 3px 0px #000, 0 0 10px rgba(0,0,0,0.8)' }}>
-                                    MOVIE NIGHT AI
-                                </h3>
-                                <p style={{ color: '#e0e0e0', fontFamily: '"Rajdhani", sans-serif', fontSize: '1.1rem', marginBottom: '15px', textShadow: '1px 1px 2px #000' }}>
-                                    {t.projects.movieNight.desc}
-                                </p>
-                                {t.projects.movieNight.highlights && (
-                                    <ul style={{ listStyle: 'none', padding: 0, marginBottom: '15px' }}>
-                                        {t.projects.movieNight.highlights.map((highlight, index) => (
-                                            <li key={index} style={{ color: '#e0e0e0', fontFamily: '"Rajdhani", sans-serif', fontSize: '1rem', marginBottom: '5px', textShadow: '1px 1px 2px #000' }}>
-                                                {highlight}
-                                            </li>
-                                        ))}
-                                    </ul>
-                                )}
-                                <p style={{ color: 'var(--color-primary)', fontFamily: '"Press Start 2P", monospace', fontSize: '0.75rem', lineHeight: '1.6', textShadow: '2px 2px 0px #000', fontWeight: 'bold' }}>
-                                    {t.projects.movieNight.stack}
-                                </p>
-                                <div style={{ marginTop: '15px', display: 'flex', justifyContent: 'flex-end' }}>
-                                    <span style={{ color: '#fff', fontSize: '0.8rem', fontFamily: '"Orbitron", sans-serif' }}>{t.projects.movieNight.cta}</span>
-                                </div>
-                            </motion.div>
-                        </a>
+                        {/* Second Project */}
+                        <ProjectCard
+                            title="YOUR SECOND PROJECT"
+                            description={t.projects.project2.desc}
+                            highlights={t.projects.project2.highlights}
+                            stack={t.projects.project2.stack}
+                            cta={t.projects.project2.cta}
+                            link="https://your-project-url.com"
+                            isMobile={isMobile}
+                        />
 
                         {/* Portfolio Project */}
-                        <a href="https://github.com/Dee-Tee11/Diogo-Portofolio" target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none', marginTop: '40px', display: 'block' }}>
-                            <motion.div
-                                style={{
-                                    background: 'rgba(5, 5, 10, 0.6)',
-                                    backdropFilter: isMobile ? 'blur(2px)' : 'blur(5px)',
-                                    border: '1px solid var(--color-primary)',
-                                    padding: '25px',
-                                    cursor: 'pointer',
-                                    position: 'relative',
-                                    overflow: 'hidden'
-                                }}
-                                animate={{
-                                    boxShadow: [
-                                        '0 0 5px rgba(209, 0, 209, 0.2)',
-                                        '0 0 20px rgba(209, 0, 209, 0.6)',
-                                        '0 0 5px rgba(209, 0, 209, 0.2)'
-                                    ],
-                                    transition: {
-                                        duration: 2,
-                                        repeat: Infinity,
-                                        ease: "easeInOut"
-                                    }
-                                }}
-                                whileHover={!isMobile ? {
-                                    scale: 1.05,
-                                    boxShadow: '0 0 40px rgba(209, 0, 209, 0.8)',
-                                    borderColor: '#fff',
-                                    transition: {
-                                        duration: 0.3,
-                                        ease: "easeOut",
-                                        repeat: 0
-                                    }
-                                } : {}}
-                            >
-                                <div style={{ position: 'absolute', top: 0, left: 0, width: '4px', height: '100%', background: 'var(--color-primary)' }} />
-                                <h3 style={{ fontFamily: '"Press Start 2P", cursive', fontSize: '1.2rem', color: '#fff', marginBottom: '15px', textShadow: '3px 3px 0px #000, 0 0 10px rgba(0,0,0,0.8)' }}>
-                                    PORTFOLIO 3D
-                                </h3>
-                                <p style={{ color: '#e0e0e0', fontFamily: '"Rajdhani", sans-serif', fontSize: '1.1rem', marginBottom: '15px', textShadow: '1px 1px 2px #000' }}>
-                                    {t.projects.portfolio.desc}
-                                </p>
-                                {t.projects.portfolio.highlights && (
-                                    <ul style={{ listStyle: 'none', padding: 0, marginBottom: '15px' }}>
-                                        {t.projects.portfolio.highlights.map((highlight, index) => (
-                                            <li key={index} style={{ color: '#e0e0e0', fontFamily: '"Rajdhani", sans-serif', fontSize: '1rem', marginBottom: '5px', textShadow: '1px 1px 2px #000' }}>
-                                                {highlight}
-                                            </li>
-                                        ))}
-                                    </ul>
-                                )}
-                                <p style={{ color: 'var(--color-primary)', fontFamily: '"Press Start 2P", monospace', fontSize: '0.75rem', lineHeight: '1.6', textShadow: '2px 2px 0px #000', fontWeight: 'bold' }}>
-                                    {t.projects.portfolio.stack}
-                                </p>
-                                <div style={{ marginTop: '15px', display: 'flex', justifyContent: 'flex-end' }}>
-                                    <span style={{ color: '#fff', fontSize: '0.8rem', fontFamily: '"Orbitron", sans-serif' }}>{t.projects.portfolio.cta}</span>
-                                </div>
-                            </motion.div>
-                        </a>
+                        <ProjectCard
+                            title="YOUR PORTFOLIO 3D"
+                            description={t.projects.project3.desc}
+                            highlights={t.projects.project3.highlights}
+                            stack={t.projects.project3.stack}
+                            cta={t.projects.project3.cta}
+                            link="https://github.com/yourusername/your-portfolio"
+                            isMobile={isMobile}
+                        />
                     </section>
 
                     {/* SKILLS & TECNOLOGIAS */}
                     <section>
-                        <h2 style={{ fontFamily: '"Press Start 2P", cursive', color: 'var(--color-primary)', fontSize: '1.5rem', marginBottom: '30px', borderBottom: '2px solid var(--color-primary)', paddingBottom: '10px' }}>
-                            <DecryptText text={t.sections.skills} speed={20} />
-                        </h2>
-                        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))', gap: '20px' }}>
-                            <div>
-                                <h3 style={{ color: '#fff', fontFamily: '"Orbitron", sans-serif', marginBottom: '15px' }}>{t.skills.tech}</h3>
-                                <ul style={{ color: '#ccc', fontFamily: '"Rajdhani", sans-serif', fontSize: '1.1rem', listStyle: 'none', padding: 0 }}>
-                                    <li>React / TypeScript / Next.js</li>
-                                    <li>Python / Fast API</li>
-                                    <li>Gen AI / RAG / Machine Learning / OCR / MCP</li>
-                                    <li>Three.js / WebGL</li>
-                                    <li>C# / .NET / Entity Framework</li>
-                                    <li>SQL / MySQL / Vector DBs</li>
-                                    <li>Azure DevOps / Git</li>
-                                    <li>Cloud / Storage / Edge Functions / Pipelines</li>
-                                </ul>
-                            </div>
-                            <div>
-                                <h3 style={{ color: '#fff', fontFamily: '"Orbitron", sans-serif', marginBottom: '15px' }}>{t.skills.soft}</h3>
-                                <ul style={{ color: '#ccc', fontFamily: '"Rajdhani", sans-serif', fontSize: '1.1rem', listStyle: 'none', padding: 0 }}>
-                                    {t.skills.softList.map((skill, index) => (
-                                        <li key={index}>{skill}</li>
-                                    ))}
-                                </ul>
-                            </div>
-                            <div>
-                                <h3 style={{ color: '#fff', fontFamily: '"Orbitron", sans-serif', marginBottom: '15px' }}>{t.skills.languages}</h3>
-                                <ul style={{ color: '#ccc', fontFamily: '"Rajdhani", sans-serif', fontSize: '1.1rem', listStyle: 'none', padding: 0 }}>
-                                    {t.skills.languageList.map((lang, index) => (
-                                        <li key={index}>{lang}</li>
-                                    ))}
-                                </ul>
-                            </div>
-                        </div>
+                        <SectionHeader text={t.sections.skills} speed={20} />
+                        <SkillsSection
+                            techStack={{
+                                title: t.skills.tech,
+                                items: [
+                                    'Technology 1 / Framework 1',
+                                    'Technology 2 / Framework 2',
+                                    'Technology 3 / Framework 3',
+                                    'Technology 4 / Tool 1',
+                                    'Technology 5 / Tool 2',
+                                    'Technology 6 / Tool 3',
+                                    'Version Control / DevOps Tools',
+                                    'Cloud Platform / Services'
+                                ]
+                            }}
+                            softSkills={{
+                                title: t.skills.soft,
+                                items: t.skills.softList
+                            }}
+                            languages={{
+                                title: t.skills.languages,
+                                items: t.skills.languageList
+                            }}
+                        />
                     </section>
 
                     {/* Footer */}
@@ -809,18 +598,18 @@ const Hero = () => {
                         gap: '20px'
                     }}>
                         <div style={{ color: '#fff', fontFamily: '"Rajdhani", sans-serif', fontSize: '1rem' }}>
-                            +351 931 069 434
+                            +XX XXX XXX XXX
                         </div>
                         <div style={{ color: 'var(--color-primary)' }}>|</div>
                         <div style={{ color: '#ccc', fontFamily: '"Rajdhani", sans-serif', fontSize: '1rem' }}>
-                            diogoluisteixeira@gmail.com
+                            your.email@example.com
                         </div>
                         <div style={{ color: 'var(--color-primary)' }}>|</div>
-                        <a href="https://www.linkedin.com/in/diogo-teixeira-9b108423b/" target="_blank" rel="noopener noreferrer" style={{ color: '#fff', fontFamily: '"Orbitron", sans-serif', textDecoration: 'none', fontSize: '0.8rem', display: 'flex', alignItems: 'center', gap: '5px' }}>
+                        <a href="https://www.linkedin.com/in/yourprofile" target="_blank" rel="noopener noreferrer" style={{ color: '#fff', fontFamily: '"Orbitron", sans-serif', textDecoration: 'none', fontSize: '0.8rem', display: 'flex', alignItems: 'center', gap: '5px' }}>
                             <span style={{ color: 'var(--color-primary)' }}>LINKEDIN</span>
                         </a>
                         <div style={{ color: 'var(--color-primary)' }}>|</div>
-                        <a href="https://github.com/Dee-Tee11" target="_blank" rel="noopener noreferrer" style={{ color: '#fff', fontFamily: '"Orbitron", sans-serif', textDecoration: 'none', fontSize: '0.8rem', display: 'flex', alignItems: 'center', gap: '5px' }}>
+                        <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer" style={{ color: '#fff', fontFamily: '"Orbitron", sans-serif', textDecoration: 'none', fontSize: '0.8rem', display: 'flex', alignItems: 'center', gap: '5px' }}>
                             <span style={{ color: 'var(--color-primary)' }}>GITHUB</span>
                         </a>
                     </footer>
