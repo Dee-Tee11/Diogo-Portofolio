@@ -111,6 +111,6 @@ Engenheiro Informático especializado em IA e desenvolvimento Full Stack. Experi
 ---
 
 ## 📬 Contact Data
-- **Email:** diogoluisteixeira@gmail.com
-- **Phone:** +351 931 069 434
-- **LinkedIn:** [Diogo Teixeira](https://www.linkedin.com/in/diogo-teixeira-9b108423b/)
+- **Email:** email@example.com
+- **Phone:** +351 9XX XXX XXX
+- **LinkedIn:** [LinkedIn Profile](https://www.linkedin.com/in/your-profile)

@@ -25,10 +25,10 @@ role2: "SUA FUNÇÃO 2",
 Ficheiro: `src/components/Hero.jsx` (linhas 700-730)
 
 ```javascript
-+351 931 069 434 → Seu telefone
-diogoluisteixeira@gmail.com → Seu email
-linkedin.com/in/diogo-teixeira-9b108423b/ → Seu LinkedIn
-github.com/Dee-Tee11 → Seu GitHub
++351 9XX XXX XXX → Seu telefone
+seu.email@exemplo.com → Seu email
+linkedin.com/in/seu-perfil → Seu LinkedIn
+github.com/seu-user → Seu GitHub
 ```
 
 ---
