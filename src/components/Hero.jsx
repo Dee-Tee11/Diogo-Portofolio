@@ -44,230 +44,225 @@ const Hero = () => {
     const translations = {
         en: {
             portfolio: "PORTFOLIO",
-            role1: "YOUR ROLE 1",
-            role2: "YOUR ROLE 2",
-            name: "YOUR NAME",
+            role1: "AI ENGINEER",
+            role2: "FULL STACK",
+            name: "DIOGO TEIXEIRA",
             sections: {
                 profile: "PROFILE",
                 experience: "PROFESSIONAL EXPERIENCE",
                 projects: "FEATURED PROJECTS",
                 skills: "SKILLS & TECH"
             },
-            profileText: "Your professional summary goes here. Describe your expertise, specializations, and what makes you unique as a professional. Keep it concise but impactful.",
+            profileText: "Currently, I am a Full-stack Developer and AI Engineer at Fundsight, where I contribute to web applications, automations, and AI solutions. I thrive in multidisciplinary teams, delivering effective and innovative solutions. I am a fast learner and a persistent problem-solver, committed to continuous growth and the adoption of technologies that optimize processes and enhance the user experience.",
             experience: {
                 company1: {
-                    company: "Current Company Name",
-                    period: "MON YEAR - PRESENT",
-                    role: "Your Job Title",
-                    stack: "Your Tech Stack Here",
-                    desc1: "► Your first responsibility or achievement.",
-                    desc2: "► Your second responsibility or achievement.",
-                    desc3: "► Your third responsibility or achievement."
+                    company: "FundSight",
+                    period: "2026 FEB - TODAY",
+                    role: "AI Engineer / Full Stack Developer",
+                    stack: "Gen AI • React • TypeScript • Python • C#/.NET • SQL/MySQL • Azure • Google Vertex AI",
+                    desc1: "► Built an AI-powered sentiment analysis pipeline that monitors client communications in real time, triggering automated alerts for relationship managers on prolonged inactivity or unresolved issues — increasing client contact by 30% and reducing incidents by 50%.",
+                    desc2: "► Deployed and maintained production AI pipelines on Azure and Google Vertex AI.",
+                    desc3: "► Refactored a client-meeting web app to auto-transcribe and index meetings via RAG, enabling natural-language search over past conversations — improving compliance, saving time on manual note-taking, and speeding up information retrieval."
                 },
                 company2: {
-                    title: "Previous Company Name",
-                    period: "MON YEAR - MON YEAR",
-                    role: "Your Previous Role",
-                    desc1: "► What you accomplished here.",
-                    desc2: "► Key projects or technologies you worked with.",
-                    desc3: "► Methodologies or tools used."
+                    title: "Soluis",
+                    period: "2025 JAN - 2026 JAN",
+                    role: "AI Engineer / Full Stack Developer",
+                    desc1: "► Built internal developer tools to streamline daily workflows and contributed to full-stack features using C#/.NET and React.",
+                    desc2: "► Built a RAG-based search system over UAE real-estate legislation and regulatory documents, cutting the time needed to find relevant legal information.",
+                    desc3: "► Worked in an agile environment, delivering practical solutions and improving operational efficiency."
                 },
-                project1: {
-                    title: "Special Project or Internship",
-                    period: "MON YEAR - MON YEAR",
-                    location: "Location (Optional)",
-                    desc1: "► Project description and your role.",
-                    desc2: "► Skills you developed or applied.",
-                    desc3: "► Results or outcomes achieved.",
-                    desc4: "► Additional achievements (optional).",
-                    focus: "Focus: Key skills or competencies"
-                },
-                internship1: {
-                    title: "Internship Name",
-                    period: "MON YEAR - MON YEAR",
-                    role: "Your Role During Internship",
-                    desc1: "► What you did during this internship.",
-                    desc2: "► Technologies: List technologies used"
-                }
+                // Removed academic/supplemental entries per request
             },
             projects: {
                 project1: {
-                    title: "YOUR MAIN PROJECT",
-                    desc: "Your main project description. Explain what the project does, its purpose, and key technologies used.",
+                    title: "MOVIE NIGHT AI",
+                    desc: "An intelligent movie discovery platform that uses RAG and vector search to provide hyper-personalized, explainable recommendations based on each user's taste profile.",
                     highlights: [
-                        "► First key achievement or feature of this project.",
-                        "► Second major accomplishment or technical highlight.",
-                        "► Third important aspect or innovation."
+                        "► RAG-powered recommendations combining watch history with movie knowledge.",
+                        "► Vector similarity search using Supabase pgvector to uncover hidden gems.",
+                        "► AI assistant backed by Llama 3.1 via Groq for conversational movie discovery."
                     ],
-                    stack: "TECH STACK 1 • TECH STACK 2 • TECH STACK 3 • TECH STACK 4",
-                    status: "WORKING NOW" // Optional - only for active projects
+                    stack: "React 19 • TypeScript • Vite • FastAPI • Python • Supabase • pgvector • Groq • Llama 3.1",
+                    status: "FEATURED",
+                    link: "https://github.com/Dee-Tee11/CinemaWebApp",
+                    cta: "VIEW REPO ►"
                 },
                 project2: {
-                    title: "YOUR SECOND PROJECT",
-                    desc: "Another project description. Highlight what makes this project special and the problems it solves.",
+                    title: "ATLAS AI",
+                    desc: "An intelligent desktop assistant that lives on your screen, featuring a floating liquid blob UI and a local LLM for privacy-focused assistance without cloud APIs.",
                     highlights: [
-                        "► Key feature or capability.",
-                        "► Technical innovation or approach.",
-                        "► User benefit or impact."
+                        "► 100% local intelligence using Qwen2-1.5B-Instruct on GPU.",
+                        "► Organic UI with interactive blob behavior and contextual memory.",
+                        "► MCP-powered reminders and notes through natural-language commands."
                     ],
-                    stack: "TECH 1 • TECH 2 • TECH 3 • TECH 4",
-                    cta: "VIEW PROJECT ►"
+                    stack: "Python • CustomTkinter • PyTorch • Qwen2 • MCP • Local AI",
+                    cta: "VIEW REPO ►",
+                    link: "https://github.com/Dee-Tee11/Atlas-Ai"
                 },
                 project3: {
-                    title: "YOUR PORTFOLIO 3D",
-                    desc: "Third project description. Could be this portfolio itself or another showcase project.",
+                    title: "DIOGO PORTFOLIO",
+                    desc: "Designed and developed a modern interactive portfolio experience with React, Three.js, and immersive UI details to showcase technical work. This repository contains the live portfolio site.",
                     highlights: [
-                        "► Implementation detail or feature.",
-                        "► Performance or design achievement."
+                        "► Built with React and 3D visualization.",
+                        "► Focused on performance and visual storytelling."
                     ],
-                    stack: "TECH STACK • FRAMEWORK • TOOLS",
-                    cta: "VIEW REPO ►"
+                    stack: "React • Vite • Three.js • Framer Motion",
+                    cta: "VIEW REPO ►",
+                    link: "https://github.com/Dee-Tee11/Diogo-Portofolio"
                 }
             },
             skills: {
                 tech: "Tech Stack",
                 techList: [
-                    "Technology 1 / Framework 1",
-                    "Technology 2 / Framework 2",
-                    "Technology 3 / Framework 3",
-                    "Technology 4 / Tool 1",
-                    "Technology 5 / Tool 2",
-                    "Technology 6 / Tool 3",
-                    "Version Control / DevOps Tools",
-                    "Cloud Platform / Services"
+                    "Gen AI / LLMs",
+                    "React / TypeScript",
+                    "Python",
+                    "C#/.NET / EF",
+                    "JavaScript / HTML / CSS",
+                    "SQL / MySQL",
+                    "RAG / MCP",
+                    "OCR / Vector DB",
+                    "Git / GitHub",
+                    "Azure DevOps",
+                    "Azure",
+                    "Google Vertex AI"
                 ],
                 soft: "Soft Skills",
                 softList: [
-                    "Skill Example 1",
-                    "Skill Example 2",
-                    "Skill Example 3",
-                    "Skill Example 4",
-                    "Skill Example 5",
-                    "Skill Example 6"
+                    "Agile Methodology",
+                    "Full Stack",
+                    "Team Player",
+                    "Determined/Persistent",
+                    "Critical Thinking",
+                    "Fast Learner",
+                    "Autonomous",
+                    "Responsible"
                 ],
                 languages: "Languages",
                 languageList: [
-                    "Language 1 (Proficiency Level)",
-                    "Language 2 (Proficiency Level)",
-                    "Language 3 (Proficiency Level)"
+                    "English (Fluent)",
+                    "Portuguese (Native)"
                 ]
             },
             footer: {
-                contact: ":: CONTACT DATA ::"
+                contact: ":: CONTACT DATA ::",
+                phone: "+351 931069434",
+                email: "diogoluisteixeira@gmail.com",
+                github: "https://github.com/Dee-Tee11/",
+                linkedin: "https://www.linkedin.com/in/diogo-teixeira-9b108423b/",
+                website: "https://diogo-portofolio.vercel.app"
             }
         },
         pt: {
             portfolio: "PORTFÓLIO",
-            role1: "A TUA FUNÇÃO 1",
-            role2: "A TUA FUNÇÃO 2",
-            name: "O TEU NOME",
+            role1: "AI ENGINEER",
+            role2: "FULL STACK",
+            name: "DIOGO TEIXEIRA",
             sections: {
                 profile: "PERFIL",
                 experience: "EXPERIÊNCIA PROFISSIONAL",
                 projects: "PROJETOS EM DESTAQUE",
                 skills: "COMPETÊNCIAS E TECNOLOGIAS"
             },
-            profileText: "O teu resumo profissional. Descreve a tua experiência, especializações e o que te distingue como profissional. Mantém o texto conciso mas impactante.",
+            profileText: "Atualmente, sou Full-stack Developer e AI Engineer na Fundsight, onde contribuo para aplicações web, automações e soluções de IA. Gosto de trabalhar em equipas multidisciplinares, entregando soluções eficazes e inovadoras. Sou uma pessoa rápida a aprender e uma resolvedora de problemas persistente, comprometida com o crescimento contínuo e com a adoção de tecnologias que otimizam processos e melhoram a experiência do utilizador.",
             experience: {
                 company1: {
-                    company: "Nome da Empresa Atual",
-                    period: "MÊS ANO - PRESENTE",
-                    role: "O Teu Cargo",
-                    stack: "A Tua Stack Tecnológica",
-                    desc1: "► A tua primeira responsabilidade ou conquista.",
-                    desc2: "► A tua segunda responsabilidade ou conquista.",
-                    desc3: "► A tua terceira responsabilidade ou conquista."
+                    company: "FundSight",
+                    period: "2026 FEV - ATUALIDADE",
+                    role: "AI Engineer / Full Stack Developer",
+                    stack: "Gen AI • React • TypeScript • Python • C#/.NET • SQL/MySQL • Azure • Google Vertex AI",
+                    desc1: "► Construí uma pipeline de análise de sentimento com IA que monitora comunicações com clientes em tempo real, acionando alertas automáticos para os gestores de relacionamento em caso de inatividade prolongada ou problemas por resolver — aumentando o contacto com clientes em 30% e reduzindo incidentes em 50%.",
+                    desc2: "► Implementei e mantive pipelines de IA em produção no Azure e no Google Vertex AI.",
+                    desc3: "► Reestruturei uma aplicação web de reuniões com clientes para transcrever e indexar automaticamente reuniões via RAG, permitindo pesquisa em linguagem natural sobre conversas anteriores — melhorando a conformidade, reduzindo o trabalho manual e acelerando a recuperação de informação."
                 },
                 company2: {
-                    title: "Nome da Empresa Anterior",
-                    period: "MÊS ANO - MÊS ANO",
-                    role: "O Teu Cargo Anterior",
-                    desc1: "► O que você realizou aqui.",
-                    desc2: "► Projetos-chave ou tecnologias com que trabalhou.",
-                    desc3: "► Metodologias ou ferramentas utilizadas."
+                    title: "Soluis",
+                    period: "2025 JAN - 2026 JAN",
+                    role: "AI Engineer / Full Stack Developer",
+                    desc1: "► Construí ferramentas internas de desenvolvimento para simplificar fluxos diários e contribui para funcionalidades full-stack com C#/.NET e React.",
+                    desc2: "► Desenvolvi um sistema de pesquisa baseado em RAG sobre legislação e documentos regulatórios de imóveis no Médio Oriente, reduzindo o tempo necessário para encontrar informação legal relevante.",
+                    desc3: "► Trabalhei em ambiente ágil, entregando soluções práticas e melhorando a eficiência operacional."
                 },
-                project1: {
-                    title: "Projeto Especial ou Estágio",
-                    period: "MÊS ANO - MÊS ANO",
-                    location: "Localização (Opcional)",
-                    desc1: "► Descrição do projeto e do teu papel.",
-                    desc2: "► Competências que desenvolveste ou aplicaste.",
-                    desc3: "► Resultados ou conquistas alcançados.",
-                    desc4: "► Conquistas adicionais (opcional).",
-                    focus: "Foco: Competências ou habilidades-chave"
-                },
-                internship1: {
-                    title: "Nome do Estágio",
-                    period: "MÊS ANO - MÊS ANO",
-                    role: "O Teu Papel Durante o Estágio",
-                    desc1: "► O que fizeste durante este estágio.",
-                    desc2: "► Tecnologias: Lista de tecnologias utilizadas"
-                }
+                // Entradas académicas/extra removidas conforme solicitado
             },
             projects: {
                 project1: {
-                    title: "O TEU PROJETO PRINCIPAL",
-                    desc: "Descrição do teu projeto principal. Explica o que o projeto faz, o seu propósito e tecnologias-chave utilizadas.",
+                    title: "MOVIE NIGHT AI",
+                    desc: "Uma plataforma inteligente de descoberta de filmes que utiliza RAG e pesquisa por vetores para oferecer recomendações hiperpessoais e explicáveis, com base no perfil de gosto de cada utilizador.",
                     highlights: [
-                        "► Primeira conquista ou funcionalidade-chave deste projeto.",
-                        "► Segunda grande realização ou destaque técnico.",
-                        "► Terceiro aspeto importante ou inovação."
+                        "► Recomendações potenciadas por RAG, combinando histórico de visualizações com conhecimento sobre filmes.",
+                        "► Pesquisa por similaridade vetorial com Supabase pgvector para descobrir pérolas escondidas.",
+                        "► Assistente de IA apoiado por Llama 3.1 via Groq para descoberta conversacional de filmes."
                     ],
-                    stack: "TECH STACK 1 • TECH STACK 2 • TECH STACK 3 • TECH STACK 4",
-                    status: "A Desenvolver" // Opcional - apenas para projetos ativos
+                    stack: "React 19 • TypeScript • Vite • FastAPI • Python • Supabase • pgvector • Groq • Llama 3.1",
+                    status: "EM DESTAQUE",
+                    link: "https://github.com/Dee-Tee11/CinemaWebApp",
+                    cta: "VER REPO ►"
                 },
                 project2: {
-                    title: "O TEU SEGUNDO PROJETO",
-                    desc: "Outra descrição de projeto. Destaca o que torna este projeto especial e os problemas que resolve.",
+                    title: "ATLAS AI",
+                    desc: "Um assistente de desktop inteligente que vive no ecrã, com uma interface de blob líquido flutuante e um LLM local para assistência com foco em privacidade, sem depender de APIs na cloud.",
                     highlights: [
-                        "► Funcionalidade ou capacidade-chave.",
-                        "► Inovação ou abordagem técnica.",
-                        "► Benefício ou impacto para o utilizador."
+                        "► Inteligência 100% local com Qwen2-1.5B-Instruct em GPU.",
+                        "► Interface orgânica com comportamento interativo do blob e memória contextual.",
+                        "► Ferramentas MCP para lembretes e notas através de comandos em linguagem natural."
                     ],
-                    stack: "TECH 1 • TECH 2 • TECH 3 • TECH 4",
-                    cta: "VER PROJETO ►"
+                    stack: "Python • CustomTkinter • PyTorch • Qwen2 • MCP • Local AI",
+                    cta: "VER REPO ►",
+                    link: "https://github.com/Dee-Tee11/Atlas-Ai"
                 },
                 project3: {
-                    title: "O TEU PORTFÓLIO 3D",
-                    desc: "Terceira descrição de projeto. Pode ser este portfólio ou outro projeto de demonstração.",
+                    title: "PORTFÓLIO 3D",
+                    desc: "Projetei e desenvolvi uma experiência de portfólio interativa e moderna com React, Three.js e detalhes visuais imersivos para apresentar o trabalho técnico.",
                     highlights: [
-                        "► Detalhe de implementação ou funcionalidade.",
-                        "► Conquista de desempenho ou design."
+                        "► Construído com React e visualização 3D.",
+                        "► Focado em performance e storytelling visual."
                     ],
-                    stack: "TECH STACK • FRAMEWORK • FERRAMENTAS",
+                    stack: "React • Vite • Three.js • Framer Motion",
                     cta: "VER REPO ►"
                 }
             },
             skills: {
                 tech: "Stack Tecnológica",
                 techList: [
-                    "Tecnologia 1 / Framework 1",
-                    "Tecnologia 2 / Framework 2",
-                    "Tecnologia 3 / Framework 3",
-                    "Tecnologia 4 / Ferramenta 1",
-                    "Tecnologia 5 / Ferramenta 2",
-                    "Tecnologia 6 / Ferramenta 3",
-                    "Controlo de Versão / DevOps",
-                    "Plataforma Cloud / Serviços"
+                    "Gen AI / LLMs",
+                    "React / TypeScript",
+                    "Python",
+                    "C#/.NET / EF",
+                    "JavaScript / HTML / CSS",
+                    "SQL / MySQL",
+                    "RAG / MCP",
+                    "OCR / Vector DB",
+                    "Git / GitHub",
+                    "Azure DevOps",
+                    "Azure",
+                    "Google Vertex AI"
                 ],
                 soft: "Soft Skills",
                 softList: [
-                    "Exemplo de Skill 1",
-                    "Exemplo de Skill 2",
-                    "Exemplo de Skill 3",
-                    "Exemplo de Skill 4",
-                    "Exemplo de Skill 5",
-                    "Exemplo de Skill 6"
+                    "Agile Methodology",
+                    "Full Stack",
+                    "Team Player",
+                    "Determined/Persistent",
+                    "Critical Thinking",
+                    "Fast Learner",
+                    "Autonomous",
+                    "Responsible"
                 ],
                 languages: "Idiomas",
                 languageList: [
-                    "Idioma 1 (Nível de Proficiência)",
-                    "Idioma 2 (Nível de Proficiência)",
-                    "Idioma 3 (Nível de Proficiência)"
+                    "English (Fluent)",
+                    "Português (Nativo)"
                 ]
             },
             footer: {
-                contact: ":: DADOS DE CONTACTO ::"
+                contact: ":: DADOS DE CONTACTO ::",
+                phone: "+351 931069434",
+                email: "diogoluisteixeira@gmail.com",
+                github: "https://github.com/Dee-Tee11/",
+                linkedin: "https://www.linkedin.com/in/diogo-teixeira-9b108423b/",
+                website: "https://diogo-portofolio.vercel.app"
             }
         }
     };
@@ -529,33 +524,7 @@ const Hero = () => {
                         />
 
 
-                        {/* Special Project or Academic Experience */}
-                        <ExperienceCard
-                            title={t.experience.project1.title}
-                            period={t.experience.project1.period}
-                            location={t.experience.project1.location}
-                            descriptions={[
-                                t.experience.project1.desc1,
-                                t.experience.project1.desc2,
-                                t.experience.project1.desc3,
-                                t.experience.project1.desc4,
-                                t.experience.project1.focus
-                            ]}
-                            isMobile={isMobile}
-                        />
-
-
-                        {/* Early Experience / Internship */}
-                        <ExperienceCard
-                            title={t.experience.internship1.title}
-                            period={t.experience.internship1.period}
-                            role={t.experience.internship1.role}
-                            descriptions={[
-                                t.experience.internship1.desc1,
-                                t.experience.internship1.desc2
-                            ]}
-                            isMobile={isMobile}
-                        />
+                        {/* Removed academic/supplemental experience entries as requested */}
                     </section>
 
 
@@ -570,6 +539,8 @@ const Hero = () => {
                             highlights={t.projects.project1.highlights}
                             stack={t.projects.project1.stack}
                             status={t.projects.project1.status}
+                            cta={t.projects.project1.cta}
+                            link={t.projects.project1.link}
                             isWorkingNow={true}
                             isMobile={isMobile}
                         />
@@ -581,7 +552,7 @@ const Hero = () => {
                             highlights={t.projects.project2.highlights}
                             stack={t.projects.project2.stack}
                             cta={t.projects.project2.cta}
-                            link="https://your-project-url.com"
+                            link={t.projects.project2.link}
                             isMobile={isMobile}
                         />
 
@@ -592,7 +563,7 @@ const Hero = () => {
                             highlights={t.projects.project3.highlights}
                             stack={t.projects.project3.stack}
                             cta={t.projects.project3.cta}
-                            link="https://github.com/yourusername/your-portfolio"
+                            link={t.projects.project3.link}
                             isMobile={isMobile}
                         />
                     </section>
@@ -629,19 +600,19 @@ const Hero = () => {
                         gap: '20px'
                     }}>
                         <div style={{ color: '#fff', fontFamily: '"Rajdhani", sans-serif', fontSize: '1rem' }}>
-                            +XX XXX XXX XXX
+                            {t.footer.phone}
                         </div>
                         <div style={{ color: 'var(--color-primary)' }}>|</div>
-                        <div style={{ color: '#ccc', fontFamily: '"Rajdhani", sans-serif', fontSize: '1rem' }}>
-                            your.email@example.com
-                        </div>
-                        <div style={{ color: 'var(--color-primary)' }}>|</div>
-                        <a href="https://www.linkedin.com/in/yourprofile" target="_blank" rel="noopener noreferrer" style={{ color: '#fff', fontFamily: '"Orbitron", sans-serif', textDecoration: 'none', fontSize: '0.8rem', display: 'flex', alignItems: 'center', gap: '5px' }}>
-                            <span style={{ color: 'var(--color-primary)' }}>LINKEDIN</span>
+                        <a href={`mailto:${t.footer.email}`} style={{ color: '#ccc', fontFamily: '"Rajdhani", sans-serif', fontSize: '1rem', textDecoration: 'none' }}>
+                            {t.footer.email}
                         </a>
                         <div style={{ color: 'var(--color-primary)' }}>|</div>
-                        <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer" style={{ color: '#fff', fontFamily: '"Orbitron", sans-serif', textDecoration: 'none', fontSize: '0.8rem', display: 'flex', alignItems: 'center', gap: '5px' }}>
+                        <a href={t.footer.github} target="_blank" rel="noopener noreferrer" style={{ color: '#fff', fontFamily: '"Orbitron", sans-serif', textDecoration: 'none', fontSize: '0.8rem', display: 'flex', alignItems: 'center', gap: '5px' }}>
                             <span style={{ color: 'var(--color-primary)' }}>GITHUB</span>
+                        </a>
+                        <div style={{ color: 'var(--color-primary)' }}>|</div>
+                        <a href={t.footer.linkedin} target="_blank" rel="noopener noreferrer" style={{ color: '#fff', fontFamily: '"Orbitron", sans-serif', textDecoration: 'none', fontSize: '0.8rem', display: 'flex', alignItems: 'center', gap: '5px' }}>
+                            <span style={{ color: 'var(--color-primary)' }}>LINKEDIN</span>
                         </a>
                     </footer>
                 </div>

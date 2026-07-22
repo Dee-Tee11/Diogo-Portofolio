@@ -21,6 +21,13 @@ Computer Engineer specializing in AI and Full Stack development. Experienced in 
 ---
 
 ## 💼 Professional Experience
+### **FundSight** | AI Engineer / Full Stack Developer
+*Feb 2026 - Present*
+- Built an AI-powered sentiment analysis pipeline that monitors client communications in real time, triggering automated alerts for relationship managers on prolonged inactivity or unresolved issues — increasing client contact by 30% and reducing incidents by 50%.
+- Deployed and maintained production AI pipelines on Azure and Google Vertex AI.
+- Refactored a client-meeting web app to auto-transcribe and index meetings via RAG, enabling natural-language search over past conversations — improving compliance and information retrieval.
+- Built internal automation tools to eliminate repetitive manual tasks across business teams.
+- **Stack:** Gen AI, React, TypeScript, Python, Azure, Google Vertex AI, SQL/MySQL
 
 ### **Soluis** | AI, Automation & Full Stack Engineer
 *Jan 2025 - Present*
@@ -49,23 +56,25 @@ Computer Engineer specializing in AI and Full Stack development. Experienced in 
 ---
 
 ## 🚀 Featured Projects
-
 ### **Atlas AI**
 AI Secretary with advanced conversational capabilities. Fine-tuned language model using Reinforcement Learning for optimal performance.
+- Repository: https://github.com/Dee-Tee11/Atlas-Ai
 - Applied Reinforcement Learning techniques for model fine-tuning.
 - Developed and trained on Google Colab and Kaggle platforms.
 - **Stack:** Python, Reinforcement Learning, Jupyter, Google Colab, Kaggle
 
 ### **Movie Night AI**
 Intelligent movie recommendation application. Advanced RAG system with vector embeddings for personalized suggestions.
+- Repository: https://github.com/Dee-Tee11/CinemaWebApp
 - Architected scalable serverless solutions using Cloud Storage and Edge Functions.
 - Designed and managed CI/CD pipelines for automated DevOps workflows.
 - **Stack:** React, TypeScript, Python, RAG, Gen AI, ML
 
-### **3D Interactive Portfolio**
-An immersive experience built with React Three Fiber to showcase skills and projects.
-- Implemented a responsive 3D scene with interactive elements.
-- Optimized performance and animations for smooth user experience.
+### **Diogo Portfolio (This Repo)**
+Interactive 3D portfolio showcasing projects and technical skills. Live site built from this repository.
+- Repository: https://github.com/Dee-Tee11/Diogo-Portofolio
+- Implemented a responsive 3D scene with interactive elements and smooth animations.
+- Optimized performance for web delivery and strong visual storytelling.
 - **Stack:** React, Three.js, Framer Motion, Vite
 
 ---
@@ -98,6 +107,12 @@ Engenheiro Informático especializado em IA e desenvolvimento Full Stack. Experi
 ### 💼 Experiência Profissional
 
 - **Soluis** | Engenheiro de IA, Automação & Full Stack (2025 - Presente)
+- **FundSight** | AI Engineer / Full Stack Developer (2026 - Atual)
+- Construí uma pipeline de análise de sentimento com IA que monitora comunicações com clientes em tempo real, acionando alertas automáticos para os gestores de relacionamento em caso de inatividade prolongada ou problemas por resolver — aumentando o contacto com clientes em 30% e reduzindo incidentes em 50%.
+- Implementei e mantive pipelines de IA em produção no Azure e no Google Vertex AI.
+- Reestruturei uma aplicação web de reuniões com clientes para transcrever e indexar automaticamente reuniões via RAG, permitindo pesquisa em linguagem natural sobre conversas anteriores — melhorando a conformidade, reduzindo o trabalho manual e acelerando a recuperação de informação.
+- Construí ferramentas internas de automação para eliminar tarefas manuais repetitivas nas equipas de negócio.
+
 - **Samsys** | Estágio Curricular (2024)
 - **Projeto Internacional (Países Baixos)** | Fontys University (2024)
 - **VisitPlann** | Estágio de Verão (2022)
@@ -111,6 +126,7 @@ Engenheiro Informático especializado em IA e desenvolvimento Full Stack. Experi
 ---
 
 ## 📬 Contact Data
-- **Email:** email@example.com
-- **Phone:** +351 9XX XXX XXX
-- **LinkedIn:** [LinkedIn Profile](https://www.linkedin.com/in/your-profile)
+- **Email:** diogoluisteixeira@gmail.com
+- **Phone:** +351 931069434
+- **GitHub:** [Dee-Tee11](https://github.com/Dee-Tee11/)
+- **LinkedIn:** [Diogo Teixeira](https://www.linkedin.com/in/diogo-teixeira-9b108423b/)
