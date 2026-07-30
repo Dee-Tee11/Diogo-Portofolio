@@ -53,26 +53,34 @@ const Hero = () => {
                 projects: "FEATURED PROJECTS",
                 skills: "SKILLS & TECH"
             },
-            profileText: "Currently, I am a Full-stack Developer and AI Engineer at Fundsight, where I contribute to web applications, automations, and AI solutions. I thrive in multidisciplinary teams, delivering effective and innovative solutions. I am a fast learner and a persistent problem-solver, committed to continuous growth and the adoption of technologies that optimize processes and enhance the user experience.",
+            profileText: "Currently, I work as an AI Engineer and Full-Stack Developer at FundSight, building AI-powered products, automation tools, and production-grade web applications. I have experience delivering end-to-end solutions across Python, Vue.js, React, C#/.NET, Azure, and Google Vertex AI, with a strong focus on measurable impact, reliability, and practical business outcomes.",
             experience: {
                 company1: {
                     company: "FundSight",
                     period: "2026 FEB - TODAY",
                     role: "AI Engineer / Full Stack Developer",
-                    stack: "Gen AI • React • TypeScript • Python • C#/.NET • SQL/MySQL • Azure • Google Vertex AI",
-                    desc1: "► Built an AI-powered sentiment analysis pipeline that monitors client communications in real time, triggering automated alerts for relationship managers on prolonged inactivity or unresolved issues — increasing client contact by 30% and reducing incidents by 50%.",
-                    desc2: "► Deployed and maintained production AI pipelines on Azure and Google Vertex AI.",
-                    desc3: "► Refactored a client-meeting web app to auto-transcribe and index meetings via RAG, enabling natural-language search over past conversations — improving compliance, saving time on manual note-taking, and speeding up information retrieval."
+                    stack: "Gen AI • Python • Vue.js • React • TypeScript • C#/.NET • SQL/MySQL • Azure • Google Vertex AI",
+                    desc1: "► Built a Python/Vue.js web app and an AI-powered sentiment analysis pipeline that monitors client communications in real time, triggering automated alerts for relationship managers on prolonged inactivity or unresolved issues — increasing client contact by 30% and reducing incidents by 50%.",
+                    desc2: "► Deployed and maintained production AI pipelines on Azure and Google Vertex AI, while also building internal automation tools in Python and C#/.NET to eliminate repetitive manual work across business teams.",
+                    desc3: "► Refactored a client-meeting web application to auto-transcribe and index meetings using RAG, enabling natural-language search over past conversations, improving compliance and reducing manual note-taking time."
                 },
                 company2: {
                     title: "Soluis",
                     period: "2025 JAN - 2026 JAN",
                     role: "AI Engineer / Full Stack Developer",
-                    desc1: "► Built internal developer tools to streamline daily workflows and contributed to full-stack features using C#/.NET and React.",
-                    desc2: "► Built a RAG-based search system over UAE real-estate legislation and regulatory documents, cutting the time needed to find relevant legal information.",
-                    desc3: "► Worked in an agile environment, delivering practical solutions and improving operational efficiency."
+                    stack: "React • C#/.NET • Python • AI • RAG",
+                    desc1: "► Built internal developer and automation tools to streamline daily workflows and contributed to full-stack features using C#/.NET and React.",
+                    desc2: "► Built a RAG-based search system over UAE real-estate legislation and regulatory documents, reducing the time needed to find relevant legal information.",
+                    desc3: "► Designed and deployed an image-generation workflow powered by a fine-tuned model to produce realistic house, villa, and apartment previews, accelerating client deliverables and freeing up designers' time."
                 },
-                // Removed academic/supplemental entries per request
+                company3: {
+                    title: "Samsys",
+                    period: "2024 SEP - 2024 DEC",
+                    role: "Full-Stack Programmer (Curricular Internship)",
+                    stack: "React • TypeScript • .NET • Azure DevOps",
+                    desc1: "► Developed a plugin for the company's main application using React, TypeScript, and .NET.",
+                    desc2: "► Collaborated in an Agile/Scrum environment with Azure DevOps and Git for version control."
+                }
             },
             projects: {
                 project1: {
@@ -165,26 +173,34 @@ const Hero = () => {
                 projects: "PROJETOS EM DESTAQUE",
                 skills: "COMPETÊNCIAS E TECNOLOGIAS"
             },
-            profileText: "Atualmente, sou Full-stack Developer e AI Engineer na Fundsight, onde contribuo para aplicações web, automações e soluções de IA. Gosto de trabalhar em equipas multidisciplinares, entregando soluções eficazes e inovadoras. Sou uma pessoa rápida a aprender e uma resolvedora de problemas persistente, comprometida com o crescimento contínuo e com a adoção de tecnologias que otimizam processos e melhoram a experiência do utilizador.",
+            profileText: "Atualmente, trabalho como AI Engineer e Full-Stack Developer na FundSight, a construir produtos com IA, ferramentas de automação e aplicações web prontas para produção. Tenho experiência a entregar soluções de ponta a ponta em Python, Vue.js, React, C#/.NET, Azure e Google Vertex AI, com forte foco em impacto mensurável, fiabilidade e resultados práticos para o negócio.",
             experience: {
                 company1: {
                     company: "FundSight",
                     period: "2026 FEV - ATUALIDADE",
                     role: "AI Engineer / Full Stack Developer",
-                    stack: "Gen AI • React • TypeScript • Python • C#/.NET • SQL/MySQL • Azure • Google Vertex AI",
-                    desc1: "► Construí uma pipeline de análise de sentimento com IA que monitora comunicações com clientes em tempo real, acionando alertas automáticos para os gestores de relacionamento em caso de inatividade prolongada ou problemas por resolver — aumentando o contacto com clientes em 30% e reduzindo incidentes em 50%.",
-                    desc2: "► Implementei e mantive pipelines de IA em produção no Azure e no Google Vertex AI.",
-                    desc3: "► Reestruturei uma aplicação web de reuniões com clientes para transcrever e indexar automaticamente reuniões via RAG, permitindo pesquisa em linguagem natural sobre conversas anteriores — melhorando a conformidade, reduzindo o trabalho manual e acelerando a recuperação de informação."
+                    stack: "Gen AI • Python • Vue.js • React • TypeScript • C#/.NET • SQL/MySQL • Azure • Google Vertex AI",
+                    desc1: "► Construí uma aplicação web em Python/Vue.js e uma pipeline de análise de sentimento com IA para monitorizar comunicações com clientes em tempo real, acionando alertas automáticos para os gestores de relacionamento em caso de inatividade prolongada ou problemas por resolver — aumentando o contacto com clientes em 30% e reduzindo incidentes em 50%.",
+                    desc2: "► Implementei e mantive pipelines de IA em produção no Azure e no Google Vertex AI, e também criei ferramentas internas de automação em Python e C#/.NET para eliminar trabalho manual repetitivo.",
+                    desc3: "► Reestruturei uma aplicação web de reuniões com clientes para transcrever e indexar automaticamente reuniões com RAG, permitindo pesquisa em linguagem natural sobre conversas anteriores, melhorando a conformidade e reduzindo o tempo gasto em notas manuais."
                 },
                 company2: {
                     title: "Soluis",
                     period: "2025 JAN - 2026 JAN",
                     role: "AI Engineer / Full Stack Developer",
-                    desc1: "► Construí ferramentas internas de desenvolvimento para simplificar fluxos diários e contribui para funcionalidades full-stack com C#/.NET e React.",
+                    stack: "React • C#/.NET • Python • AI • RAG",
+                    desc1: "► Construí ferramentas internas de desenvolvimento e automação para simplificar fluxos diários e contribui para funcionalidades full-stack com C#/.NET e React.",
                     desc2: "► Desenvolvi um sistema de pesquisa baseado em RAG sobre legislação e documentos regulatórios de imóveis no Médio Oriente, reduzindo o tempo necessário para encontrar informação legal relevante.",
-                    desc3: "► Trabalhei em ambiente ágil, entregando soluções práticas e melhorando a eficiência operacional."
+                    desc3: "► Projetei e implementei um workflow de geração de imagens com um modelo afinado para produzir previews realistas de casas, vilas e apartamentos, acelerando os entregáveis dos clientes e libertando tempo dos designers."
                 },
-                // Entradas académicas/extra removidas conforme solicitado
+                company3: {
+                    title: "Samsys",
+                    period: "2024 SET - 2024 DEZ",
+                    role: "Full-Stack Programmer (Curricular Internship)",
+                    stack: "React • TypeScript • .NET • Azure DevOps",
+                    desc1: "► Desenvolvi um plugin para a aplicação principal da empresa utilizando React, TypeScript e .NET.",
+                    desc2: "► Colaborei num ambiente Agile/Scrum com Azure DevOps e Git para controlo de versões."
+                }
             },
             projects: {
                 project1: {
@@ -520,11 +536,22 @@ const Hero = () => {
                                 t.experience.company2.desc2,
                                 t.experience.company2.desc3
                             ]}
+                            stack={t.experience.company2.stack}
                             isMobile={isMobile}
                         />
 
-
-                        {/* Removed academic/supplemental experience entries as requested */}
+                        {/* Internship Experience */}
+                        <ExperienceCard
+                            title={t.experience.company3.title}
+                            period={t.experience.company3.period}
+                            role={t.experience.company3.role}
+                            descriptions={[
+                                t.experience.company3.desc1,
+                                t.experience.company3.desc2
+                            ]}
+                            stack={t.experience.company3.stack}
+                            isMobile={isMobile}
+                        />
                     </section>
 
 
