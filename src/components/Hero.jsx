@@ -59,16 +59,17 @@ const Hero = () => {
                     company: "FundSight",
                     period: "2026 FEB - TODAY",
                     role: "AI Engineer / Full Stack Developer",
-                    stack: "Gen AI • Python • Vue.js • React • TypeScript • C#/.NET • SQL/MySQL • Azure • Google Vertex AI",
+                    stack: "Gen AI • Python • Vue.js • React • TypeScript • C#/.NET • SQL • Azure • Google Vertex AI",
                     desc1: "► Built a Python/Vue.js web app and an AI-powered sentiment analysis pipeline that monitors client communications in real time, triggering automated alerts for relationship managers on prolonged inactivity or unresolved issues — increasing client contact by 30% and reducing incidents by 50%.",
                     desc2: "► Deployed and maintained production AI pipelines on Azure and Google Vertex AI, while also building internal automation tools in Python and C#/.NET to eliminate repetitive manual work across business teams.",
-                    desc3: "► Refactored a client-meeting web application to auto-transcribe and index meetings using RAG, enabling natural-language search over past conversations, improving compliance and reducing manual note-taking time."
+                    desc3: "► Refactored a client-meeting web application to auto-transcribe and index meetings using RAG, enabling natural-language search over past conversations, improving compliance and reducing manual note-taking time.",
+                    desc4: "► Migrated and debugged existing SQL Server (T-SQL) logic, including triggers, stored procedures, and scheduled jobs, as part of refactoring the legacy application into the new system."
                 },
                 company2: {
                     title: "Soluis",
                     period: "2025 JAN - 2026 JAN",
                     role: "AI Engineer / Full Stack Developer",
-                    stack: "React • C#/.NET • Python • AI • RAG",
+                    stack: "React • C#/.NET • Python • AI • RAG • POSTGres",
                     desc1: "► Built internal developer and automation tools to streamline daily workflows and contributed to full-stack features using C#/.NET and React.",
                     desc2: "► Built a RAG-based search system over UAE real-estate legislation and regulatory documents, reducing the time needed to find relevant legal information.",
                     desc3: "► Designed and deployed an image-generation workflow powered by a fine-tuned model to produce realistic house, villa, and apartment previews, accelerating client deliverables and freeing up designers' time."
@@ -77,7 +78,7 @@ const Hero = () => {
                     title: "Freelance",
                     period: "2025 - PRESENT",
                     role: "AI Engineer / Full-Stack Developer",
-                    stack: "Medusa.js • Whisper AI • n8n • React • Node.js",
+                    stack: "Medusa.js • Whisper AI • n8n • React • Node.js • Supabase",
                     desc1: "► Built and deployed a static e-commerce website using Medusa.js, delivering a full online storefront with product catalog, cart, and checkout for a freelance client.",
                     desc2: "► Built a voice-to-form automation pipeline using Whisper AI for speech-to-text transcription, automatically filling out forms from spoken input and routing submissions into a validation workflow.",
                     desc3: "► Orchestrated the transcription-to-validation workflow using n8n, connecting the Whisper AI transcription step, form-filling logic, and validation hand-off into a single automated flow."
@@ -142,18 +143,17 @@ const Hero = () => {
             skills: {
                 tech: "Tech Stack",
                 techList: [
-                    "Gen AI / LLMs",
-                    "React / TypeScript",
+                    "React • TypeScript • JavaScript",
+                    "Vue.js • HTML/CSS",
+                    "C#/.NET • Entity Framework",
                     "Python",
-                    "C#/.NET / EF",
-                    "JavaScript / HTML / CSS",
-                    "SQL / MySQL",
-                    "RAG / MCP",
-                    "OCR / Vector DB",
-                    "Git / GitHub",
-                    "Azure DevOps",
-                    "Azure",
-                    "Google Vertex AI"
+                    "Generative AI • RAG • MCP",
+                    "LangChain • LangGraph • Hugging Face",
+                    "Fine-Tuning (LoRA) • OCR • Vector DBs",
+                    "Google Vertex AI • Azure Cloud",
+                    "Azure DevOps • Docker • Kubernetes",
+                    "n8n • CI/CD • Git/GitHub",
+                    "SQL • SQL Server (T-SQL) • MySQL • PostgreSQL • Supabase"
                 ],
                 soft: "Soft Skills",
                 softList: [
@@ -280,18 +280,17 @@ const Hero = () => {
             skills: {
                 tech: "Stack Tecnológica",
                 techList: [
-                    "Gen AI / LLMs",
-                    "React / TypeScript",
+                    "React • TypeScript • JavaScript",
+                    "Vue.js • HTML/CSS",
+                    "C#/.NET • Entity Framework",
                     "Python",
-                    "C#/.NET / EF",
-                    "JavaScript / HTML / CSS",
-                    "SQL / MySQL",
-                    "RAG / MCP",
-                    "OCR / Vector DB",
-                    "Git / GitHub",
-                    "Azure DevOps",
-                    "Azure",
-                    "Google Vertex AI"
+                    "Generative AI • RAG • MCP",
+                    "LangChain • LangGraph • Hugging Face",
+                    "Fine-Tuning (LoRA) • OCR • Vector DBs",
+                    "Google Vertex AI • Azure Cloud",
+                    "Azure DevOps • Docker • Kubernetes",
+                    "n8n • CI/CD • Git/GitHub",
+                    "SQL • SQL Server (T-SQL) • MySQL • PostgreSQL • Supabase"
                 ],
                 soft: "Soft Skills",
                 softList: [
