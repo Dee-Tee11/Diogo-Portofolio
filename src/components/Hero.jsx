@@ -74,12 +74,31 @@ const Hero = () => {
                     desc3: "► Designed and deployed an image-generation workflow powered by a fine-tuned model to produce realistic house, villa, and apartment previews, accelerating client deliverables and freeing up designers' time."
                 },
                 company3: {
+                    title: "Freelance",
+                    period: "2025 - PRESENT",
+                    role: "AI Engineer / Full-Stack Developer",
+                    stack: "Medusa.js • Whisper AI • n8n • React • Node.js",
+                    desc1: "► Built and deployed a static e-commerce website using Medusa.js, delivering a full online storefront with product catalog, cart, and checkout for a freelance client.",
+                    desc2: "► Built a voice-to-form automation pipeline using Whisper AI for speech-to-text transcription, automatically filling out forms from spoken input and routing submissions into a validation workflow.",
+                    desc3: "► Orchestrated the transcription-to-validation workflow using n8n, connecting the Whisper AI transcription step, form-filling logic, and validation hand-off into a single automated flow."
+                },
+                company4: {
                     title: "Samsys",
-                    period: "2024 SEP - 2024 DEC",
+                    period: "Sep 2024 - Dec 2024",
                     role: "Full-Stack Programmer (Curricular Internship)",
-                    stack: "React • TypeScript • .NET • Azure DevOps",
-                    desc1: "► Developed a plugin for the company's main application using React, TypeScript, and .NET.",
-                    desc2: "► Collaborated in an Agile/Scrum environment with Azure DevOps and Git for version control."
+                    stack: "React • TypeScript • .NET • Azure DevOps • Git/GitHub",
+                    desc1: "► Designed and developed a custom plugin in React, TypeScript, and .NET, integrated into the company's main enterprise application.",
+                    desc2: "► Created an intelligent warehouse management system with automatic reordering functionality, preventing stockouts by monitoring inventory levels and triggering purchase orders when thresholds were met.",
+                    desc3: "► Collaborated in a Scrum team using Azure DevOps for sprint management and Git/GitHub for version control, while implementing frontend and backend features following company coding standards and best practices."
+                },
+                company5: {
+                    title: "Visit Plann",
+                    period: "Jul 2021 - Aug 2021",
+                    role: "Backend Engineer (Summer Internship)",
+                    stack: "Java • Android Studio • Geolocation APIs • REST APIs",
+                    desc1: "► Implemented a monument recognition system using Java and Android Studio, with device geolocation APIs automatically identifying landmarks and providing multilingual audio guides.",
+                    desc2: "► Developed backend services for a tourism planning platform, implementing data processing and API endpoints.",
+                    desc3: "► Worked with senior developers to learn backend architecture patterns and best practices in a production environment."
                 }
             },
             projects: {
@@ -194,12 +213,31 @@ const Hero = () => {
                     desc3: "► Projetei e implementei um workflow de geração de imagens com um modelo afinado para produzir previews realistas de casas, vilas e apartamentos, acelerando os entregáveis dos clientes e libertando tempo dos designers."
                 },
                 company3: {
+                    title: "Freelance",
+                    period: "2025 - ATUALIDADE",
+                    role: "AI Engineer / Full-Stack Developer",
+                    stack: "Medusa.js • Whisper AI • n8n • React • Node.js",
+                    desc1: "► Construí e implementei um website estático de e-commerce com Medusa.js, entregando uma loja online completa com catálogo de produtos, carrinho e checkout para um cliente freelance.",
+                    desc2: "► Desenvolvi um pipeline de automação de voz para formulário usando Whisper AI para transcrição de fala para texto, preenchendo automaticamente formulários a partir de entrada falada e encaminhando submissões para um fluxo de validação.",
+                    desc3: "► Orientei o workflow de transcrição para validação com n8n, ligando o passo de transcrição com Whisper AI, a lógica de preenchimento de formulários e a entrega para validação num único fluxo automatizado."
+                },
+                company4: {
                     title: "Samsys",
-                    period: "2024 SET - 2024 DEZ",
+                    period: "Set 2024 - Dez 2024",
                     role: "Full-Stack Programmer (Curricular Internship)",
-                    stack: "React • TypeScript • .NET • Azure DevOps",
-                    desc1: "► Desenvolvi um plugin para a aplicação principal da empresa utilizando React, TypeScript e .NET.",
-                    desc2: "► Colaborei num ambiente Agile/Scrum com Azure DevOps e Git para controlo de versões."
+                    stack: "React • TypeScript • .NET • Azure DevOps • Git/GitHub",
+                    desc1: "► Projetei e desenvolvi um plugin personalizado em React, TypeScript e .NET, integrado na aplicação empresarial principal da empresa.",
+                    desc2: "► Criei um sistema inteligente de gestão de armazém com funcionalidade de reordenação automática, prevenindo rupturas de stock através da monitorização dos níveis de inventário e do acionamento de ordens de compra quando os limiares eram atingidos.",
+                    desc3: "► Colaborei numa equipa Scrum utilizando Azure DevOps para gestão de sprints e Git/GitHub para controlo de versões, implementando funcionalidades frontend e backend de acordo com as boas práticas e standards da empresa."
+                },
+                company5: {
+                    title: "Visit Plann",
+                    period: "Jul 2021 - Aug 2021",
+                    role: "Backend Engineer (Summer Internship)",
+                    stack: "Java • Android Studio • APIs de geolocalização • REST APIs",
+                    desc1: "► Implementei um sistema de reconhecimento de monumentos em Java e Android Studio, com APIs de geolocalização do dispositivo a identificar automaticamente marcos e a fornecer guias de áudio multilíngues.",
+                    desc2: "► Desenvolvi serviços backend para uma plataforma de planeamento turístico, implementando processamento de dados e endpoints de API.",
+                    desc3: "► Trabalhei com desenvolvedores séniores para aprender padrões de arquitetura backend e boas práticas num ambiente de produção."
                 }
             },
             projects: {
@@ -540,16 +578,45 @@ const Hero = () => {
                             isMobile={isMobile}
                         />
 
-                        {/* Internship Experience */}
+                        {/* Freelance Experience */}
                         <ExperienceCard
                             title={t.experience.company3.title}
                             period={t.experience.company3.period}
                             role={t.experience.company3.role}
                             descriptions={[
                                 t.experience.company3.desc1,
-                                t.experience.company3.desc2
+                                t.experience.company3.desc2,
+                                t.experience.company3.desc3
                             ]}
                             stack={t.experience.company3.stack}
+                            isMobile={isMobile}
+                        />
+
+                        {/* Internship Experience */}
+                        <ExperienceCard
+                            title={t.experience.company4.title}
+                            period={t.experience.company4.period}
+                            role={t.experience.company4.role}
+                            descriptions={[
+                                t.experience.company4.desc1,
+                                t.experience.company4.desc2,
+                                t.experience.company4.desc3
+                            ]}
+                            stack={t.experience.company4.stack}
+                            isMobile={isMobile}
+                        />
+
+                        {/* Summer Internship Experience */}
+                        <ExperienceCard
+                            title={t.experience.company5.title}
+                            period={t.experience.company5.period}
+                            role={t.experience.company5.role}
+                            descriptions={[
+                                t.experience.company5.desc1,
+                                t.experience.company5.desc2,
+                                t.experience.company5.desc3
+                            ]}
+                            stack={t.experience.company5.stack}
                             isMobile={isMobile}
                         />
                     </section>
